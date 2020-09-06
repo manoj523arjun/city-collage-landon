@@ -179,14 +179,21 @@ a:hover {
 	position: relative;
 	height: 100vh;
 	width: 100%;
+	overflow: hidden;
 }
 
 .banner {
-	background-image: url(../images/banner.jpg);
-    background-size: cover;
+	/* background-image: url(../images/banner.jpg);
+    background-size: cover; */
     height: 100%;
     width: 100%;
     position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.banner-container video {
+	width: 100%;
 }
 
 .button-left {
@@ -245,7 +252,8 @@ a:hover {
 	display: flex;
 	position: absolute;
     width: 100%;
-    bottom: 0px;
+    bottom: 10px;
+    left: 0;
 }
 
 .banner-buttons > .button-container {
