@@ -502,7 +502,7 @@ footer h3 {
 	font-size: 20px;
 }
 
-footer::before {
+/* footer::before {
 	background-image: url("../images/footer-bg.png");
 	content: "";
 	width: 100%;
@@ -512,7 +512,7 @@ footer::before {
 	opacity: 0.02;
 	top: 0;
 	background-repeat: repeat;
-}
+} */
 
 .quick-links-block {
 	position: relative;
