@@ -180,11 +180,13 @@
 	padding: 0;
 }
 
-#navbarSupportedContent {
-	background: rgba(34, 34, 46, 0.5);
+
+.nav-bg-overlay {
+	background-color: rgba(34, 34, 46, 0.5);
     padding: 10px 0px 10px 20px;
     border-radius: 10px;
     font-family: 'LeBeauneNew';
+    display: flex;
 }
 
 #navbarSupportedContent .navbar-nav > li.nav-item {
@@ -231,16 +233,9 @@
 }
 
 #navRight a.login-btn {
-	color: #ffffff;
-	background: #117e6c;
-	transition: 0.3s ease-out all;
 	border-radius: 10px;
 }
 
-#navRight a.login-btn:hover {
-	background: #015f63;
-	transition: 0.3s ease-out all;
-}
 
 .search-btn {
 	font-size: 24px;
@@ -392,7 +387,7 @@
 	content: "";
     width: 100%;
     height: 100%;
-    background: rgba(17, 126, 108, 0.7);
+    background-color: rgba(17, 126, 108, 0.7);
     position: absolute;
     border-right: 100px solid transparent;
     transform: skew(0deg, 18deg);
@@ -405,7 +400,7 @@ footer.section-container {
 	position: relative;
 	display: block;
 	border-bottom: 0px solid transparent;
-	background: #22222e;
+	background-color: #22222e;
 	font-family: 'Roboto Lt';
     font-weight: 300;
     font-style: normal;
@@ -442,7 +437,7 @@ footer h3 {
 	content: "";
 	width: 2px;
 	height: 100%;
-	background: #ffffff;
+	background-color: #ffffff;
 	left: -3px;
 	top: 0;
 }
@@ -462,7 +457,7 @@ footer h3 {
 }
 
 .quick-links li a:hover {
-	color: #117e6c;
+	color: #d1356f;
 }
 
 .address {
@@ -495,7 +490,7 @@ footer h3 {
 }
 
 .social-media-block > a:hover {
-	background-color: #015f63;
+	background-color: #117e6c;
 	transition: 0.3s ease-out all;
 }
 
@@ -503,7 +498,7 @@ footer h3 {
 	padding: 30px 0px;
 	color: #c2c2c2;
 	font-size: 12px;
-	background: #1b1b25;
+	background-color: #1b1b25;
 	font-family: 'Roboto Lt';
 }
 
@@ -568,6 +563,65 @@ footer h3 {
 	background-repeat: no-repeat;
 }
 
+#programmesBanner {
+	background-image: url('../images/programmes/programmes-banner.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.courses-list h3 {
+	margin-top: 20px;
+}
+
+.courses-list > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.courses-list > ul.programme-list {
+	padding-left: 20px;
+}
+
+.courses-list > ul > li {
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.courses-list > ul > li .caret-triangle::before {
+	left: -20px;
+	top: 3px;
+	border-left-color: #000000;
+}
+
+.courses-list > ul > li > a {
+	color: initial;
+	font-size: 20px;
+	transition: 0.3s color;
+}
+
+.courses-list > ul > li > a:hover {
+	color: #d1356f;
+}
+
+.courses-list > ul > li > a:hover .caret-triangle::before {
+	border-left-color: #d1356f;
+}
+
+.apply-now {
+	display: block;
+	padding: 15px 30px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#sidemenu.affix {
+	position: fixed;
+	top: 0;
+}
+
 
 @media screen and (min-width: 1200px) {
 	.navbar-brand {
@@ -581,6 +635,10 @@ footer h3 {
 }
 
 @media screen and (max-width: 1199px) {
+	.nav-bg-overlay {
+		background-color: transparent;
+		border: none;
+	}
 	.navbar-expand-sm .navbar-toggler {
 	    display: inline-block;
 	    padding: 8px 10px;
@@ -590,7 +648,7 @@ footer h3 {
 
 	.navbar-toggler-icon {
 		height: 2px;
-		background: #ffffff;
+		background-color: #ffffff;
 		position: relative;
 	}
 
@@ -600,7 +658,7 @@ footer h3 {
 		content: "";
 		width: 100%;
 		top: -8px;
-		background: #ffffff;
+		background-color: #ffffff;
 		position: absolute;
 		left: 0px;
 	}
@@ -611,7 +669,7 @@ footer h3 {
 		content: "";
 		width: 100%;
 		bottom: -8px;
-		background: #ffffff;
+		background-color: #ffffff;
 		position: absolute;
 		left: 0px;
 	}
@@ -630,7 +688,7 @@ footer h3 {
 	#navbarSupportedContent::after {
 		content: "";
 	    position: absolute;
-	    right: 180px;
+	    right: 240px;
 	    top: -14px;
 	    border-bottom: 15px solid #00294e;
 	    width: 15px;
@@ -644,7 +702,7 @@ footer h3 {
 		flex-direction: column;
 		width: 100%;
 		align-items: center;
-		background: #00294e;
+		background-color: #00294e;
 		width: 100%;
 		border-radius: 5px;
 		padding: 30px;
@@ -676,7 +734,7 @@ footer h3 {
 		position: relative;
 		bottom: 0;
 		padding-top: 30px;
-		background: #ffffff;
+		background-color: #ffffff;
 		overflow: initial;
 		padding-bottom: 30px;
 	}

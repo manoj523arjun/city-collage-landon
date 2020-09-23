@@ -26,8 +26,30 @@
 	background-color: rgba(17, 126, 108, 0.8)
 }
 
+.bg-color-white-tr-8 {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-primary {
+	background-color: #117e6c;
+	transition: 0.3s all;
+	color: #ffffff;
+}
+
+.btn-primary:hover {
+	background-color: #015f63;
+}
+
+.btn-rounded {
+	border-radius: 10px;
+}
+
 .txt-color-white {
 	color: #ffffff;
+}
+
+.txt-color-black {
+	color: #22222e;
 }
 
 .txt-color-primary {
@@ -36,6 +58,10 @@
 
 .txt-color-secondary {
 	color: #d1356f;
+}
+
+.txt-bold {
+	font-weight: bold;
 }
 
 .text-center {
@@ -184,5 +210,5 @@ a:hover {
 	text-decoration: none;
 }
 .pd-t-100 {
-	padding-top: 150px;
+	padding-top: 100px;
 }
