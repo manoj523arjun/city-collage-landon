@@ -10,16 +10,24 @@
 	background-color: #042b5d;
 }
 
-.bg-color-purple {
+.bg-color-teal-grey {
 	background-color: #7e6257;
+}
+
+.bg-color-purple {
+	background-color: #2b1e56;
 }
 
 .bg-color-black-tr {
 	background-color: rgba(34, 34, 46, 0.9);
 }
 
-.bg-color-black-tr-7 {
+.bg-color-black-tr-8 {
 	background-color: rgba(34, 34, 46, 0.8);
+}
+
+.bg-color-grey-tr-8 {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .bg-color-primary-tr-8 {
@@ -28,6 +36,15 @@
 
 .bg-color-white-tr-8 {
 	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-color-teal-blue {
+	background-color: #154254;
+}
+
+
+.bg-color-teal-green {
+	background-color: #246173;
 }
 
 .btn-primary {
@@ -42,6 +59,10 @@
 
 .btn-rounded {
 	border-radius: 10px;
+}
+
+.btn-inline-block {
+	display: inline-block;
 }
 
 .txt-color-white {
@@ -68,6 +89,10 @@
 	text-align: center;
 }
 
+.text-lg {
+	font-size: 22px;
+}
+
 .heading-lv-2 {
 	font-size: 36px;
 	margin-bottom: 20px;
@@ -91,8 +116,13 @@
 .mg-btm-60 {
 	margin-bottom: 60px;
 }
+
 .mg-btm-20 {
 	margin-bottom: 20px;
+}
+
+.mg-btm-30 {
+	margin-bottom: 30px;
 }
 
 .read-more {
@@ -209,6 +239,15 @@ p {
 a:hover {
 	text-decoration: none;
 }
+
 .pd-t-100 {
 	padding-top: 100px;
+}
+
+.full-height {
+	height: 100vh;
+}
+
+.no-margin-btm {
+	margin-bottom: 0;
 }

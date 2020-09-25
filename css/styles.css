@@ -172,6 +172,17 @@
 	z-index: 1;
 }
 
+.header-fullwidth .menu-container {
+	top: 0;
+	padding: 5px 0;
+	background-color: rgba(34, 34, 46, 0.5);
+}
+
+.header-fullwidth .menu-container .nav-bg-overlay {
+	background-color: transparent;
+	border-radius: 0;
+}
+
 .menu-block {
 	position: relative;
 }
@@ -556,6 +567,17 @@ footer h3 {
 	background-repeat: no-repeat;
 }
 
+.page-section-bg {
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.page-section-bg-not-fixed {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 #proffessionalBanner {
 	background-image: url('../images/about/proffessional-shapping.jpg');
 	background-position: right top;
@@ -565,9 +587,24 @@ footer h3 {
 
 #programmesBanner {
 	background-image: url('../images/programmes/programmes-banner.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+}
+
+#admissionsProcedure {
+	background-image: url('../images/admissions/admissions-procedure-banner.jpg');
+}
+
+#admissionsOffer {
+	background-image: url('../images/admissions/accepting-offer-banner.jpg');
+	background-position: 0;
+}
+
+#partnersBanner {
+	background-image: url('../images/partners/partners-banner.jpg');
+	background-position: 0;
+}
+
+.admissions-blocks {
+	padding: 40px 0;
 }
 
 .courses-list h3 {
@@ -615,6 +652,30 @@ footer h3 {
 	text-align: center;
 	color: #ffffff;
 	font-weight: bold;
+}
+
+.partners-img-txt {
+	display: flex;
+	border-bottom: 3px solid #d1356f;
+	align-items: center;
+}
+
+.partner-logo {
+	flex: 1;
+}
+
+.partners-img-txt .partner-heading {
+	font-size: 42px;
+	flex: 2;
+}
+
+.partner-logo img {
+	height: 100px;
+}
+
+.partner-description {
+	padding: 20px;
+	margin-top: 20px;
 }
 
 #sidemenu.affix {
