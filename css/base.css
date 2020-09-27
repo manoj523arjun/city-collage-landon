@@ -251,3 +251,26 @@ a:hover {
 .no-margin-btm {
 	margin-bottom: 0;
 }
+
+ul.default-list {
+	margin: 0;
+	padding-left: 15px;
+}
+
+ul.default-list li {
+	margin-bottom: 5px;
+}
+
+.flexbox-align-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.no-border {
+	border: none;
+}
+
+.h1 {
+	font-size: 60px;
+}
