@@ -51,6 +51,7 @@
 	background-color: #117e6c;
 	transition: 0.3s all;
 	color: #ffffff;
+	border: none;
 }
 
 .btn-primary:hover {
