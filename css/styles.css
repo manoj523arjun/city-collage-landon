@@ -217,8 +217,7 @@
 #navbarSupportedContent .navbar-nav > li.nav-item > a:hover {
 	color: #d1356f;
     transition: 0.3s ease-out color;
-    font-weight: 600;
-    text-shadow: 0 1px 2px #22222e;
+    font-weight: bold;
 }
 
 #navbarSupportedContent .navbar-nav > li.nav-item.active > a .caret-triangle::before,
@@ -726,6 +725,146 @@ footer h3 {
 #sidemenu.affix {
 	position: fixed;
 	top: 0;
+}
+
+.map-block {
+	position: relative;
+}
+
+.map-block span {
+	display: inline-block;
+	padding: 0px 5px;
+	background-color: #d6d4d5;
+	border: 1px solid #68817e;
+	border-radius: 10px;
+	padding-left: 30px;
+	font-size: 12px;
+	z-index: 2;
+	color: #117e6c;
+}
+
+.map-block span::before {
+	position: absolute;
+	content: '';
+	background-color: #117e6c;
+	width: 24px;
+    height: 24px;
+    left: -0px;
+    top: -1px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.3s all;
+}
+
+.map-block span:hover {
+	color: #ffffff;
+}
+
+.map-block span:hover::before{
+	width: 100%;
+	border-radius: 10px;
+} 
+
+.map-block .london-location {
+	position: absolute;
+	top: 17%;
+    left: 43%;
+}
+
+.map-block .dubai-location {
+	position: absolute;
+	top: 35%;
+    left: 61%;
+}
+
+.form-black {
+	background-color: #1b1b25;
+}
+
+.form-black input,
+.form-black textarea,
+.form-black label {
+	color: #ffffff;
+}
+
+#contactUsForm .form-group {
+	position: relative;
+}
+
+#contactUsForm .form-group .input-label,
+#contactUsForm .form-group input.form-control:placeholder-shown + .input-label {
+	position: absolute;
+	top: 10px;
+	transition: 0.3s all;
+}
+
+.input-label sub {
+	top: -3px;
+}
+
+.form-control {
+	border: 1px solid #117e6c;
+	background-color: transparent;
+}
+
+#contactUsForm .form-group input.form-control {
+	border: 1px solid transparent;
+	border-bottom: 1px solid #117e6c;
+	outline: none;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	padding-left: 0;
+	background: transparent;
+	font-size: 20px;
+	z-index: 1;
+	position: relative;
+}
+
+#contactUsForm .form-group .form-control:focus {
+	outline: none;
+	box-shadow: none;
+	color: #ffffff;
+	background-color: transparent;
+}
+
+#contactUsForm .form-group input.form-control:focus + .input-label,
+#contactUsForm .form-group input.form-control:not(:placeholder-shown) + .input-label {
+	top: -20px;
+	transition: 0.3s all;
+	font-size: 14px;
+}
+
+#contactUsForm ::-webkit-input-placeholder {
+	opacity: 0;
+	transition: inherit;
+}
+
+#contactUsForm :-moz-placeholder { /* Firefox 18- */
+   opacity: 0;
+   transition: inherit;
+}
+
+#contactUsForm ::-moz-placeholder {  /* Firefox 19+ */
+   opacity: 0;
+   transition: inherit;
+}
+
+#contactUsForm :-ms-input-placeholder {  
+   opacity: 0;
+   transition: inherit;
+}
+
+textarea {
+	min-height: 120px;
+}
+
+.ckeckbox-input.confirmation {
+	position: absolute;
+    top: 3px;
+    width: 20px;
+    height: 20px;
 }
 
 
