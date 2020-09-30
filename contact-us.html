@@ -313,6 +313,7 @@
 		</div>
 	</div>
 
+<script type="text/javascript" src="js/countriesList.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -327,17 +328,10 @@
 			}
 		});
 
-		$.ajax({
-		  url: "./js/countriesList.json",
-		  contentType: "application/json",
-		  success: function (data) {
-		  	const countriesList = JSON.parse(data);
-		  	renderCountriesList(countriesList);
-		  }
-		});
+		renderCountriesList();
 	});
 
-	function renderCountriesList(countriesList) {
+	function renderCountriesList() {
 		const phoneExtBox = $("#phoneNumberExt");
 		const countryBox = $("#country");
 		let innerHTMLWithExt = '';
