@@ -12,7 +12,9 @@ $(document).ready(function(){
 	      var height = $(this).height();
 	      var diff = scrolled - initY;
 	      var ratio = Math.round((diff / height) * 100);
-	      $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px');
+	      if (window.innerWidth > 991) {
+	      	$(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px');
+	      }
 	  });
 
 	  // Attach scroll event to window. Calculate the scroll ratio of each element
@@ -28,7 +30,9 @@ $(document).ready(function(){
 	      if(visible) {
 	        var diff = scrolled - initY;
 	        var ratio = Math.round((diff / height) * 100);
-	        $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px');
+	        if (window.innerWidth > 991) {
+		      	$(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px');
+		    }
 	      }
 	    })
 	  })
