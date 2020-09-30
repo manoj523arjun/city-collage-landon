@@ -783,7 +783,8 @@ footer h3 {
 
 .form-black input,
 .form-black textarea,
-.form-black label {
+.form-black label,
+.form-black select {
 	color: #ffffff;
 }
 
@@ -791,8 +792,7 @@ footer h3 {
 	position: relative;
 }
 
-#contactUsForm .form-group .input-label,
-#contactUsForm .form-group input.form-control:placeholder-shown + .input-label {
+#contactUsForm .form-group .input-label {
 	position: absolute;
 	top: 10px;
 	transition: 0.3s all;
@@ -802,12 +802,7 @@ footer h3 {
 	top: -3px;
 }
 
-.form-control {
-	border: 1px solid #117e6c;
-	background-color: transparent;
-}
-
-#contactUsForm .form-group input.form-control {
+#contactUsForm .form-group .form-control {
 	border: 1px solid transparent;
 	border-bottom: 1px solid #117e6c;
 	outline: none;
@@ -822,31 +817,56 @@ footer h3 {
 	position: relative;
 }
 
+.select-bg-icon {
+	color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+#contactUsForm .form-group textarea.form-control {
+	border: 1px solid #117e6c;
+	padding-left: 10px;
+}
+
 #contactUsForm .form-group .form-control:focus {
 	outline: none;
 	box-shadow: none;
 	color: #ffffff;
 	background-color: transparent;
+	border-bottom-width: 3px;
 }
 
-#contactUsForm .form-group input.form-control:focus + .input-label,
-#contactUsForm .form-group input.form-control:not(:placeholder-shown) + .input-label {
+#contactUsForm .form-group .text-area-label {
+	left: 10px;
+}
+
+
+
+#contactUsForm .form-group .form-control:focus + .input-label,
+#contactUsForm .form-group .form-control.active + .input-label {
 	top: -20px;
 	transition: 0.3s all;
 	font-size: 14px;
 }
+
+#contactUsForm .form-group .form-control:focus + .text-area-label,
+#contactUsForm .form-group .form-control.active + .text-area-label {
+	left: 0;
+}
+/*
 
 #contactUsForm ::-webkit-input-placeholder {
 	opacity: 0;
 	transition: inherit;
 }
 
-#contactUsForm :-moz-placeholder { /* Firefox 18- */
+#contactUsForm :-moz-placeholder {
    opacity: 0;
    transition: inherit;
 }
 
-#contactUsForm ::-moz-placeholder {  /* Firefox 19+ */
+#contactUsForm ::-moz-placeholder {
    opacity: 0;
    transition: inherit;
 }
@@ -855,6 +875,8 @@ footer h3 {
    opacity: 0;
    transition: inherit;
 }
+
+*/
 
 textarea {
 	min-height: 120px;

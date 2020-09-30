@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="carousel/owl.theme.default.min.css">
-	<link rel="stylesheet" type="text/css" href="carousel/owl.carousel.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
@@ -147,54 +145,72 @@
 		<form class="row" id="contactUsForm">
 			<div class="col-sm-6 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="firstName" placeholder="FIRST NAME" required />
+					<input type="text" class="form-control" name="firstName" required />
 					<label class="input-label">FIRST NAME <sub>*</sub></label>
 				</div>
 			</div>
 			<div class="col-sm-6 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="lastName" placeholder="LAST NAME" required />
+					<input type="text" class="form-control" name="lastName" required />
 					<label class="input-label">LAST NAME <sub>*</label>
 				</div>
 			</div>
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<input type="email" class="form-control" name="emailAddress" placeholder="EMAIL" required />
+					<input type="email" class="form-control" name="emailAddress" required />
 					<label class="input-label">EMAIL <sub>*</label>
 				</div>
 			</div>
 
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="programme" placeholder="PROGRAMME" required />
+					<select class="form-control" name="programmes" required>
+						<option value></option>
+						<option value="1">Diploma Courses</option>
+						<option value="2">BA (Hons) degree - final year</option>
+						<option value="3">Master's degree - final stage</option>
+					</select>
 					<label class="input-label">PROGRAMME <sub>*</label>
+					<i class="fa fa-chevron-down select-bg-icon"></i>
 				</div>
 			</div>
 
-			<div class="col-sm-12 mg-btm-30">
+			<div class="col-sm-3 mg-btm-30">
 				<div class="form-group">
-					<input type="number" class="form-control" name="phoneNumber" placeholder="TELEPHONE" required />
+					<select class="form-control" id="phoneNumberExt" required>
+						<option value></option>
+					</select>
 					<label class="input-label">TELEPHONE <sub>*</label>
+					<i class="fa fa-chevron-down select-bg-icon"></i>
+				</div>
+			</div>
+
+			<div class="col-sm-9 mg-btm-30">
+				<div class="form-group">
+					<input type="text" class="form-control" name="phoneNumber" required />
 				</div>
 			</div>
 
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="country" placeholder="COUNTRY" required />
+					<select class="form-control" id="country" required>
+						<option value></option>
+					</select>
 					<label class="input-label">COUNTRY <sub>*</label>
+					<i class="fa fa-chevron-down select-bg-icon"></i>
 				</div>
 			</div>
 
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<label class="">COMMENTS</label>
 					<textarea class="form-control" name="comments"></textarea>
+					<label class="input-label text-area-label">COMMENTS</label>
 				</div>
 			</div>
 
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<input class="ckeckbox-input confirmation" type="checkbox" />
+					<input class="ckeckbox-input confirmation" type="checkbox" required />
 					<label style="padding-left:30px;">I here by declare that all the information given by me in this application is true and correct to the best of my knowledge and belief. I also note that if any of the above statements are found to be incorrect or false or any information or particulars have been suppressed or omitted there from, I am liable to be disqualified and my admision may be cancelled. I have read and understood the contents of the Admission Announcement for the various Programmes. I here by permit the institute to use, display or transfer any of the details furnished by me in this form for complying with the admission formalities.</label>
 				</div>
 			</div>
@@ -299,5 +315,40 @@
 
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".form-control").on('blur', function() {
+			const value = $(this).val();
+			if (value) {
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+		});
+
+		$.ajax({
+		  url: "./js/countriesList.json",
+		  contentType: "application/json",
+		  success: function (data) {
+		  	const countriesList = JSON.parse(data);
+		  	renderCountriesList(countriesList);
+		  }
+		});
+	});
+
+	function renderCountriesList(countriesList) {
+		const phoneExtBox = $("#phoneNumberExt");
+		const countryBox = $("#country");
+		let innerHTMLWithExt = '';
+		let innerHTML = '';
+		countriesList.forEach((countryValue) => {
+			innerHTMLWithExt += `<option data-code=${countryValue.dial_code} value='${countryValue.name}(${countryValue.dial_code})'>${countryValue.name} (${countryValue.dial_code})</option>`;
+			innerHTML += `<option value=${countryValue.name}>${countryValue.name}</option>`;
+		});
+		phoneExtBox.append(innerHTMLWithExt);
+		countryBox.append(innerHTML);
+	}
+</script>
 </body>
 </html>
