@@ -628,7 +628,7 @@ footer h3 {
 .office-location::before {
 	content: '';
 	position: absolute;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.9);
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -788,6 +788,10 @@ footer h3 {
 	color: #ffffff;
 }
 
+.form-black select option {
+	color: #000000;
+}
+
 #contactUsForm .form-group {
 	position: relative;
 }
@@ -899,6 +903,11 @@ textarea {
 		background-color: #042b5d;
 		transition: 0.3s all;
 	}
+
+	.programme-right-block {
+		max-width: 33.33333%;
+		margin-left: 8%;
+	}
 }
 
 @media screen and (max-width: 1199px) {
@@ -955,7 +964,7 @@ textarea {
 	#navbarSupportedContent::after {
 		content: "";
 	    position: absolute;
-	    right: 240px;
+	    right: calc(30% - 50px);
 	    top: -14px;
 	    border-bottom: 15px solid #00294e;
 	    width: 15px;
@@ -968,11 +977,12 @@ textarea {
 	#navbarSupportedContent .navbar-nav {
 		flex-direction: column;
 		width: 100%;
-		align-items: center;
+		align-items: flex-start;
 		background-color: #00294e;
 		width: 100%;
 		border-radius: 5px;
 		padding: 30px;
+		padding-left: calc(50% - 60px);
 	}
 
 	.banner-heading {
@@ -991,12 +1001,24 @@ textarea {
 		margin-bottom: 10px;
 	}
 
+	.partner-logo img {
+		height: 75px;
+	}
+
+	.partners-img-txt .partner-heading {
+		font-size: 32px;
+		margin-left: 30px;
+	}
+
 	.hide-lg {
 		display: none;
 	}
 }
 
 @media screen and (max-width: 991px) {
+	#navbarSupportedContent::after {
+	    right: calc(40% - 50px);
+	}
 	.services-grid .overlay-text {
 		position: relative;
 		bottom: 0;
@@ -1033,13 +1055,18 @@ textarea {
 	.hide-md {
 		display: none;
 	}
+
 	.parallax {
     	background-attachment: scroll;
-  }
+  	}
 
 }
 
 @media screen and (max-width: 767px) {
+	#navbarSupportedContent::after {
+	    right: calc(53% - 50px);
+	}
+
 	.quick-links-block {
 		margin-bottom: 30px;
 	}
@@ -1048,11 +1075,30 @@ textarea {
 		text-align: center;
 		margin-top: 20px;
 	}
+
+	.partners-img-txt {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.partners-img-txt .partner-heading {
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	.mg-btm-sm-30 {
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 575px) {
+	.section-heading {
+		font-size: 36px;
+	}
+
 	#navbarSupportedContent::after {
-		right: 168px;
+		right: 220px;
+		top: -12px;
 	}
 	
 	.banner-text {
@@ -1083,5 +1129,15 @@ textarea {
 
 	.owl-next {
 		right: -10px;
+	}
+
+	.location-address {
+	    top: 20px;
+	    left: 20px;
+	}
+
+	.location-address h3,
+	.location-address p {
+		margin-bottom: 10px;
 	}
 }
