@@ -645,6 +645,7 @@ footer h3 {
 
 .location-address p {
 	font-weight: 500;
+	font-family: 'Roboto';
 }
 
 .admissions-blocks {
@@ -788,8 +789,13 @@ footer h3 {
 	color: #ffffff;
 }
 
+select .select-optiongroup {
+	font-weight: bold;
+}
+
 .form-black select option {
 	color: #000000;
+	font-weight: 300;
 }
 
 #contactUsForm .form-group {
@@ -1099,6 +1105,14 @@ textarea {
 	#navbarSupportedContent::after {
 		right: 220px;
 		top: -12px;
+	}
+
+	.quick-links-block:nth-child(2n + 1)::before {
+		display: none;
+	}
+
+	.quick-links-block:nth-child(2n)::before {
+		left: calc(-30% + 32px);
 	}
 	
 	.banner-text {
