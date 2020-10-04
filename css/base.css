@@ -1,3 +1,69 @@
+
+
+@font-face {
+    font-family: 'LeBeauneNew';
+    src: url('../fonts/LeBeauneNew.woff2') format('woff2'),
+        url('../fonts/LeBeauneNew.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Light.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Lt';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Bold.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 .bg-color-primary {
 	background-color: #117e6c;
 }
@@ -64,6 +130,10 @@
 
 .btn-inline-block {
 	display: inline-block;
+}
+
+.btn-block {
+	display: block;
 }
 
 .txt-color-white {
@@ -215,6 +285,10 @@ body {
 	letter-spacing: 0.04em;
 }
 
+h1 {
+	font-size: 60px;
+}
+
 h1, h2 {
 	font-family: 'LeBeauneNew';
 	color: inherit;
@@ -246,7 +320,7 @@ a:hover {
 }
 
 .full-height {
-	height: 100vh;
+	height: 100vh !important;
 }
 
 .no-margin-btm {
@@ -260,7 +334,7 @@ ul.default-list {
 }
 
 ul.default-list li {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .flexbox-align-center {
@@ -275,4 +349,8 @@ ul.default-list li {
 
 .h1 {
 	font-size: 60px;
+}
+
+.font-roboto-lt {
+	font-family: 'Roboto Lt';
 }
