@@ -1,68 +1,4 @@
 
-
-@font-face {
-    font-family: 'LeBeauneNew';
-    src: url('../fonts/LeBeauneNew.woff2') format('woff2'),
-        url('../fonts/LeBeauneNew.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Alegreya Sans';
-    src: url('../fonts/AlegreyaSans-Regular.woff2') format('woff2'),
-        url('../fonts/AlegreyaSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Alegreya Sans';
-    src: url('../fonts/AlegreyaSans-Light.woff2') format('woff2'),
-        url('../fonts/AlegreyaSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Lt';
-    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
-        url('../fonts/Roboto-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../fonts/Roboto-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Alegreya Sans';
-    src: url('../fonts/AlegreyaSans-Bold.woff2') format('woff2'),
-        url('../fonts/AlegreyaSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 #menuBannerSection {
 	position: relative;
     width: 100%;
@@ -269,7 +205,7 @@
 }
 
 .partners-container {
-	padding: 20px;
+	padding: 20px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -508,21 +444,21 @@ footer h3 {
 }
 
 .copyright-section {
-	padding: 30px 0px;
+	padding: 15px 0px;
 	color: #c2c2c2;
 	font-size: 12px;
 	background-color: #1b1b25;
 	font-family: 'Roboto Lt';
 }
 
-
-.owl-carousel .owl-item {
-	padding: 5px;
+.owl-carousel .owl-stage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .owl-carousel .owl-item img {
 	width: auto;
-	height: 65px;
 }
 
 .owl-carousel .owl-nav button.owl-next, 
@@ -692,7 +628,6 @@ footer h3 {
 }
 
 .apply-now {
-	display: block;
 	padding: 15px 30px;
 	text-align: center;
 	color: #ffffff;
@@ -706,16 +641,12 @@ footer h3 {
 }
 
 .partner-logo {
-	flex: 1;
+	min-width: 300px;
 }
 
 .partners-img-txt .partner-heading {
-	font-size: 42px;
+	font-size: 32px;
 	flex: 2;
-}
-
-.partner-logo img {
-	height: 100px;
 }
 
 .partner-description {
@@ -899,6 +830,22 @@ textarea {
     height: 20px;
 }
 
+.back-to-top-btn {
+	display: inline-block;
+	position: fixed;
+	right :30px;
+	bottom: 85px;
+	display: none;
+	z-index: 999;
+}
+
+.back-to-top-btn button {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	font-size: 18px;
+}
+
 
 @media screen and (min-width: 1200px) {
 	.navbar-brand {
@@ -1007,13 +954,12 @@ textarea {
 		margin-bottom: 10px;
 	}
 
-	.partner-logo img {
-		height: 75px;
+	.partner-logo {
+		min-width: 260px;
 	}
 
 	.partners-img-txt .partner-heading {
-		font-size: 32px;
-		margin-left: 30px;
+		font-size: 28px;
 	}
 
 	.hide-lg {
@@ -1042,6 +988,10 @@ textarea {
 		color: #000000;
 	}
 
+	.partners-img-txt .partner-heading {
+		font-size: 26px;
+	}
+
 	.services-grid::before {
 		display: none;
 	}
@@ -1065,6 +1015,13 @@ textarea {
 	.parallax {
     	background-attachment: scroll;
   	}
+
+  	.text-lg {
+  		font-size: 16px;
+  	}
+  	.back-to-top-btn {
+		bottom: 40px;
+	}
 
 }
 
@@ -1102,6 +1059,10 @@ textarea {
 		font-size: 36px;
 	}
 
+	.h1 {
+		font-size: 48px;
+	}
+
 	#navbarSupportedContent::after {
 		right: 220px;
 		top: -12px;
@@ -1133,9 +1094,6 @@ textarea {
 	    top: 15px;
 	}
 
-	.owl-carousel .owl-item {
-		padding: 30px;
-	}
 
 	.owl-prev {
 		left: -10px;
