@@ -76,12 +76,20 @@
 	background-color: #042b5d;
 }
 
+.bg-color-blue-tr {
+	background-color: rgba(4, 43, 93, 0.9);
+}
+
 .bg-color-teal-grey {
 	background-color: #7e6257;
 }
 
 .bg-color-purple {
 	background-color: #2b1e56;
+}
+
+.bg-color-purple-tr {
+	background-color: rgba(43, 30, 86, 0.9);
 }
 
 .bg-color-black-tr {
@@ -102,6 +110,10 @@
 
 .bg-color-white-tr-8 {
 	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-color-violat-tr {
+	background-color: rgba(93, 32, 73, 0.9);
 }
 
 .bg-color-teal-blue {
@@ -349,6 +361,10 @@ ul.default-list li {
 
 .h1 {
 	font-size: 60px;
+}
+
+.h3 {
+	font-size: 32px;
 }
 
 .font-roboto-lt {
