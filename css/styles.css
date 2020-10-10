@@ -733,6 +733,12 @@ select .select-optiongroup {
 	position: relative;
 }
 
+#contactUsForm .form-group label.error {
+	position: absolute;
+	color: #d1356f;
+	bottom: -35px;
+}
+
 #contactUsForm .form-group .input-label {
 	position: absolute;
 	top: 10px;
@@ -784,15 +790,15 @@ select .select-optiongroup {
 
 
 
-#contactUsForm .form-group .form-control:focus + .input-label,
-#contactUsForm .form-group .form-control.active + .input-label {
+#contactUsForm .form-group .form-control:focus ~ .input-label,
+#contactUsForm .form-group .form-control.active ~ .input-label {
 	top: -20px;
 	transition: 0.3s all;
 	font-size: 14px;
 }
 
-#contactUsForm .form-group .form-control:focus + .text-area-label,
-#contactUsForm .form-group .form-control.active + .text-area-label {
+#contactUsForm .form-group .form-control:focus ~ .text-area-label,
+#contactUsForm .form-group .form-control.active ~ .text-area-label {
 	left: 0;
 }
 /*
