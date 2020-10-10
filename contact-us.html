@@ -153,13 +153,13 @@
 			<div class="col-sm-6 mg-btm-30">
 				<div class="form-group">
 					<input type="text" class="form-control" name="lastName" id="lastName" required />
-					<label class="input-label">LAST NAME <sub>*</label>
+					<label class="input-label">LAST NAME <sub>*</sub></label>
 				</div>
 			</div>
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
 					<input type="email" class="form-control" name="emailAddress" id="emailAddress" required />
-					<label class="input-label">EMAIL <sub>*</label>
+					<label class="input-label">EMAIL <sub>*</sub></label>
 				</div>
 			</div>
 
@@ -202,7 +202,7 @@
 					      <option value="MD_1">Master of Business Administration (Top-up)</option>
 					    </optgroup>
 					</select>
-					<label class="input-label">PROGRAMME <sub>*</label>
+					<label class="input-label">PROGRAMME <sub>*</sub></label>
 					<i class="fa fa-chevron-down select-bg-icon"></i>
 				</div>
 			</div>
@@ -212,7 +212,7 @@
 					<select class="form-control" id="phoneNumberExt" required>
 						<option value></option>
 					</select>
-					<label class="input-label">TELEPHONE <sub>*</label>
+					<label class="input-label">TELEPHONE <sub>*</sub></label>
 					<i class="fa fa-chevron-down select-bg-icon"></i>
 				</div>
 			</div>
@@ -225,10 +225,10 @@
 
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<select class="form-control" id="country">
-						<option value></option>
+					<select class="form-control" id="countryInput" required>
+						<option value="-1"></option>
 					</select>
-					<label class="input-label">COUNTRY <sub>*</label>
+					<label class="input-label">COUNTRY <sub>*</sub></label>
 					<i class="fa fa-chevron-down select-bg-icon"></i>
 				</div>
 			</div>
@@ -383,7 +383,7 @@
 				console.log(data);
 				$.ajax({
 			        type: "POST",
-			        url: "http://localhost/city-collage-landon/send_email.php",
+			        url: "./send_email.php",
 			        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
 			        data: data,
 			        success: function (response) {
@@ -399,7 +399,7 @@
 
 	function renderCountriesList() {
 		const phoneExtBox = $("#phoneNumberExt");
-		const countryBox = $("#country");
+		const countryBox = $("#countryInput");
 		let innerHTMLWithExt = '';
 		let innerHTML = '';
 		countriesList.forEach((countryValue) => {
