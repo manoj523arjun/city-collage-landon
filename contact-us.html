@@ -143,22 +143,22 @@
 
 <div class="section-container form-black">
 	<div class="container">
-		<form class="row" id="contactUsForm">
+		<form class="row" id="contactUsForm" novalidate method="POST">
 			<div class="col-sm-6 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="firstName" required />
+					<input type="text" class="form-control" name="firstName" id="firstName" required />
 					<label class="input-label">FIRST NAME <sub>*</sub></label>
 				</div>
 			</div>
 			<div class="col-sm-6 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="lastName" required />
+					<input type="text" class="form-control" name="lastName" id="lastName" required />
 					<label class="input-label">LAST NAME <sub>*</label>
 				</div>
 			</div>
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<input type="email" class="form-control" name="emailAddress" required />
+					<input type="email" class="form-control" name="emailAddress" id="emailAddress" required />
 					<label class="input-label">EMAIL <sub>*</label>
 				</div>
 			</div>
@@ -219,13 +219,13 @@
 
 			<div class="col-sm-9 mg-btm-30">
 				<div class="form-group">
-					<input type="text" class="form-control" name="phoneNumber" required />
+					<input type="text" class="form-control" name="phoneNumber" id="phoneNumber" required />
 				</div>
 			</div>
 
 			<div class="col-sm-12 mg-btm-30">
 				<div class="form-group">
-					<select class="form-control" id="country" required>
+					<select class="form-control" id="country">
 						<option value></option>
 					</select>
 					<label class="input-label">COUNTRY <sub>*</label>
@@ -249,7 +249,7 @@
 
 			<div class="col-sm-12">
 				<div class="form-group">
-					<button class="btn-primary apply-now">SUBMIT</button>	
+					<button id="submitFormBtn" class="btn-primary apply-now">SUBMIT</button>
 				</div>
 			</div>
 		</form>
@@ -356,10 +356,11 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/parallax.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".form-control").on('blur', function() {
+		$(".form-control").on('blur', function () {
 			const value = $(this).val();
 			if (value) {
 				$(this).addClass("active");
@@ -369,6 +370,31 @@
 		});
 
 		renderCountriesList();
+
+		$("#contactUsForm").validate();
+
+		$("#contactUsForm").on('submit', function (event) {
+			if ($("#contactUsForm").valid()) {
+				event.preventDefault();
+				var data = {
+					firstName: $("[name='firstName']").val(),
+					lastName: $("[name='lastName']").val()
+				};
+				console.log(data);
+				$.ajax({
+			        type: "POST",
+			        url: "http://localhost/city-collage-landon/send_email.php",
+			        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+			        data: data,
+			        success: function (response) {
+			        	alert(response);
+			        },
+			        error: function(error, response){
+			            console.log(error, response);
+			        }
+			    });
+			}
+		});
 	});
 
 	function renderCountriesList() {
