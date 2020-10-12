@@ -31,7 +31,7 @@
 }
 
 .button-left {
-	background-color: #d1356f;
+	background-color: #117e6c;
 	transition: 0.3s ease-out all;
 }
 
@@ -151,14 +151,14 @@
 
 #navbarSupportedContent .navbar-nav > li.nav-item.active > a,
 #navbarSupportedContent .navbar-nav > li.nav-item > a:hover {
-	color: #d1356f;
+	color: #117e6c;
     transition: 0.3s ease-out color;
     font-weight: bold;
 }
 
 #navbarSupportedContent .navbar-nav > li.nav-item.active > a .caret-triangle::before,
 #navbarSupportedContent .navbar-nav > li.nav-item > a:hover .caret-triangle::before {
-	border-left-color: #d1356f;
+	border-left-color: #117e6c;
 }
 
 #navbarSupportedContent .navbar-nav .caret-triangle {
@@ -406,7 +406,7 @@ footer h3 {
 }
 
 .quick-links li a:hover {
-	color: #d1356f;
+	color: #117e6c;
 }
 
 .address {
@@ -465,7 +465,7 @@ footer h3 {
 .owl-carousel .owl-nav button.owl-prev {
 	width: 30px;
 	height: 30px;
-	background-color: #d1356f;
+	background-color: #117e6c;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-60%);
@@ -620,11 +620,11 @@ footer h3 {
 }
 
 .courses-list > ul > li > a:hover {
-	color: #d1356f;
+	color: #117e6c;
 }
 
 .courses-list > ul > li > a:hover .caret-triangle::before {
-	border-left-color: #d1356f;
+	border-left-color: #117e6c;
 }
 
 .apply-now {
@@ -636,7 +636,7 @@ footer h3 {
 
 .partners-img-txt {
 	display: flex;
-	border-bottom: 3px solid #d1356f;
+	border-bottom: 3px solid #117e6c;
 	align-items: center;
 }
 
@@ -735,7 +735,7 @@ select .select-optiongroup {
 
 #contactUsForm .form-group label.error {
 	position: absolute;
-	color: #d1356f;
+	color: #117e6c;
 	bottom: -35px;
 }
 
@@ -846,10 +846,27 @@ textarea {
 }
 
 .back-to-top-btn button {
-	border-radius: 50%;
-	width: 45px;
-	height: 45px;
+	background-color: transparent;
+	border: none;
+	opacity: 0.7;
 	font-size: 18px;
+	transition: all, 0.3s;
+}
+
+.back-to-top-btn button:hover,
+.back-to-top-btn button:focus {
+	opacity: 1;
+	transition: all, 0.3s;
+	border: none;
+	outline: none;
+}
+
+.back-to-top-btn svg .st0{
+	fill:#117E6C;
+}
+
+.back-to-top-btn svg .st1{
+	fill:#FFFFFF;
 }
 
 
@@ -859,7 +876,7 @@ textarea {
 	}
 
 	.services-grid:hover::before {
-		background-color: #042b5d;
+		background-color: #117e6c;
 		transition: 0.3s all;
 	}
 

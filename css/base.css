@@ -69,7 +69,7 @@
 }
 
 .bg-color-secondary {
-	background-color: #d1356f;
+	background-color: #117e6c;
 }
 
 .bg-color-blue {
@@ -161,7 +161,7 @@
 }
 
 .txt-color-secondary {
-	color: #d1356f;
+	color: #117e6c;
 }
 
 .txt-bold {
@@ -189,7 +189,7 @@
 	font-size: 42px;
 	display: inline-block;
 	border: none;
-	border-bottom: 3px solid #d1356f;
+	border-bottom: 3px solid #117e6c;
 }
 
 .min-h-50 {
@@ -241,7 +241,7 @@
 	content: "";
     position: absolute;
     right: 0;
-    border-left: 8px solid #d1356f;
+    border-left: 8px solid #117e6c;
     width: 10px;
     height: 10px;
     border-top: 5px solid transparent;
@@ -355,6 +355,17 @@ ul.default-list li {
 	justify-content: center;
 }
 
+.flex-full-height {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-full-height .flex-box {
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
 .no-border {
 	border: none;
 }
@@ -369,4 +380,9 @@ ul.default-list li {
 
 .font-roboto-lt {
 	font-family: 'Roboto Lt';
+}
+
+.border-white-rounded {
+	border: 1px solid #ffffff;
+	border-radius: 3px;
 }
