@@ -186,10 +186,10 @@
 }
 
 .section-heading {
-	font-size: 42px;
-	display: inline-block;
-	border: none;
-	border-bottom: 3px solid #117e6c;
+    font-size: 42px;
+    display: inline-block;
+    border: none;
+    border-bottom: 3px solid #d1356f;
 }
 
 .min-h-50 {
@@ -325,6 +325,7 @@ p {
 
 a:hover {
 	text-decoration: none;
+	color: #015f63;
 }
 
 .pd-t-100 {
