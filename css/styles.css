@@ -151,14 +151,14 @@
 
 #navbarSupportedContent .navbar-nav > li.nav-item.active > a,
 #navbarSupportedContent .navbar-nav > li.nav-item > a:hover {
-	color: #117e6c;
+	color: #01ffd0;
     transition: 0.3s ease-out color;
     font-weight: bold;
 }
 
 #navbarSupportedContent .navbar-nav > li.nav-item.active > a .caret-triangle::before,
 #navbarSupportedContent .navbar-nav > li.nav-item > a:hover .caret-triangle::before {
-	border-left-color: #117e6c;
+	border-left-color: #01ffd0;
 }
 
 #navbarSupportedContent .navbar-nav .caret-triangle {
@@ -406,7 +406,7 @@ footer h3 {
 }
 
 .quick-links li a:hover {
-	color: #117e6c;
+	color: #01ffd0;
 }
 
 .address {
