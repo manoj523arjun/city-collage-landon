@@ -14,18 +14,18 @@
    
    $message = "<table>";
 
-   $message = "<tr><td>First Name</td><td>:</td><td>$fName</td></tr>";
-   $message = "<tr><td>Last Name</td><td>:</td><td>$lName</td></tr>";
+   $message .= "<tr><td>First Name</td><td>:</td><td>$fName</td></tr>";
+   $message .= "<tr><td>Last Name</td><td>:</td><td>$lName</td></tr>";
 
-   $message = "<tr><td>Email</td><td>:</td><td>$email</td></tr>";
-   $message = "<tr><td>Programme</td><td>:</td><td>$programme</td></tr>";
+   $message .= "<tr><td>Email</td><td>:</td><td>$email</td></tr>";
+   $message .= "<tr><td>Programme</td><td>:</td><td>$programme</td></tr>";
 
-   $message = "<tr><td>Phone Number</td><td>:</td><td>$programme</td></tr>";
-   $message = "<tr><td>Country</td><td>:</td><td>$country</td></tr>";
+   $message .= "<tr><td>Phone Number</td><td>:</td><td>$programme</td></tr>";
+   $message .= "<tr><td>Country</td><td>:</td><td>$country</td></tr>";
 
-   $message = "<tr><td>Comments</td><td>:</td><td>$comments</td></tr>";
+   $message .= "<tr><td>Comments</td><td>:</td><td>$comments</td></tr>";
 
-   $message = "</table>";
+   $message .= "</table>";
    
    $header = "From:manoj523arjun@gmail.com \r\n";
    // $header .= "Cc:afgh@somedomain.com \r\n";
