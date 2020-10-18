@@ -141,7 +141,7 @@
 	</h2>
 
 	<div class="container">
-        <div id="testimonial-slider" class="owl-carousel">
+        <div id="partners-slider" class="owl-carousel">
                 <div class="partners-container grid-box">
 					<a href="./partners.html"><img class="memb-logo" src="./images/partners/qualify.jpg" height="65"></a>
 				</div>
@@ -163,6 +163,54 @@
 				</div>
             </div>
     </div>
+</section>
+
+<section class="text-center" style="padding-bottom: 0;">
+	<div id="testimonial-slider" class="owl-carousel has-bg" id="testimonialsContainer">
+		<div class="section-container bg-color-teal-blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2">
+						<div class="testimonial-descreption txt-color-white">
+							"I want to study while working so I decided to study online. It was very interesting to meet people from different parts of the world via the online platform, which was a really good way to collaborate and share our study experiences. recommend this course for those who want to learn something new while working."
+						</div>
+						<p>&nbsp;</p>
+						<h3 class="txt-color-white">Nora Davies</h3>
+						<p class="mg-btm-0">BA (Hons) in Business Management</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-container bg-color-purple">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2">
+						<div class="testimonial-descreption txt-color-white">
+							"I found the course to be great value for money and all the materials were top notch, current, and relevant for today's business world. More people should consider it. I have already recommended it to others. The tutors and the support team made this quite a managed experience."
+						</div>
+						<p>&nbsp;</p>
+						<h3 class="txt-color-white">Olivia Jones</h3>
+						<p class="mg-btm-0">Master of Business Administration</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-container bg-color-teal-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2">
+						<div class="testimonial-descreption txt-color-white">
+							"The course is of superior quality both through the delivery of courses and interactive activity. By way of exposure, quality and quantity of information, the course can be accessed by people with or without management experience. This course will increase my career opportunities, especially in the private business area. I recommend this course for those who want professional development."
+						</div>
+						<p>&nbsp;</p>
+						<h3 class="txt-color-white">Chieko Yamashita</h3>
+						<p class="mg-btm-0">BA (Hons) in Business Management</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <footer class="section-container">
@@ -228,7 +276,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 offset-lg-0 col-sm-6 offset-sm-3 col-6 offset-3">
-				<img src="images/footer-logo.jpeg" width="100%" style="margin-top: 50px;">
+				<img src="images/footer-logo.png" width="100%" style="margin-top: 50px;">
 			</div>
 		</div>
 	</div>
@@ -255,7 +303,7 @@
 					<div class="social-media-block">
 						<a href="#" class="fa fa-facebook"></a>
 						<a href="#" class="fa fa-twitter"></a>
-						<a href="#" class="fa fa-linkedin"></a>
+						<a href="#" class="fa fa-instagram"></a>
 					</div>
 				</div>
 			</div>
@@ -281,10 +329,9 @@
 			minDistance:  90 * $(window).height() / 100
 		});
 
-		$('.owl-carousel').owlCarousel({
+		$('#partners-slider').owlCarousel({
 		    loop: true,
 		    margin: 10,
-		    loop: true,
 		    nav: false,
 		    autoplay: true,
 		    responsiveClass: true,
@@ -301,6 +348,30 @@
 		        },
 		        1200:{
 		            items:4
+		        }
+		    }
+		});
+
+		$('#testimonial-slider').owlCarousel({
+		    loop: true,
+		    margin: 0,
+		    loop: true,
+		    nav: true,
+		    autoplay: false,
+		    responsiveClass: true,
+		    autoplayTimeout: 2000,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        576: {
+		        	items:1
+		        },
+		        992:{
+		            items:1
+		        },
+		        1200:{
+		            items:1
 		        }
 		    }
 		});

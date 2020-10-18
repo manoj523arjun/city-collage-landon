@@ -1,3 +1,26 @@
+.navbar-brand {
+	position: relative;
+	padding: 0;
+}
+
+.navbar-brand::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url('../images/logo-hover.png');
+	background-size: cover;
+	opacity: 0;
+}
+
+.navbar-brand:hover img {
+	opacity: 0;
+}
+
+.navbar-brand:hover::before {
+	opacity: 1;
+}
 
 #menuBannerSection {
 	position: relative;
@@ -54,6 +77,20 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+.svg-icon {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.svg-icon svg {
+	animation-name: transisionScale;
+	animation-duration: 1s;
+	transform: scale(1);
+	animation-iteration-count: infinite;
 }
 
 .banner-text p {
@@ -132,7 +169,7 @@
 	background-color: rgba(34, 34, 46, 0.5);
     padding: 10px 0px 10px 20px;
     border-radius: 10px;
-    font-family: 'LeBeauneNew';
+    font-family: 'Conv_BlissPro-Bold - Bliss Pro - Bold';
     display: flex;
 }
 
@@ -321,7 +358,7 @@
 
 .services-grid .overlay-text h3 {
 	color: #ffffff;
-	font-family: 'LeBeauneNew';
+	font-family: 'Conv_BlissPro-Bold - Bliss Pro - Bold';
 	transition: 0.3s margin-bottom;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -350,7 +387,7 @@ footer.section-container {
 	display: block;
 	border-bottom: 0px solid transparent;
 	background-color: #22222e;
-	font-family: 'Roboto Lt';
+	font-family: 'Conv_BlissPro - Bliss Pro - Regular';
     font-weight: 300;
     font-style: normal;
 	font-size: 14px;
@@ -361,7 +398,7 @@ footer.section-container {
 footer h3 {
 	color: #ffffff;
 	font-size: 20px;
-	font-family: 'Roboto';
+	font-family: 'Conv_BlissPro-Bold - Bliss Pro - Bold';
 }
 
 /* footer::before {
@@ -448,7 +485,7 @@ footer h3 {
 	color: #c2c2c2;
 	font-size: 12px;
 	background-color: #1b1b25;
-	font-family: 'Roboto Lt';
+	font-family: 'Conv_BlissPro - Bliss Pro - Regular';
 }
 
 .owl-carousel .owl-stage {
@@ -480,6 +517,43 @@ footer h3 {
 
 .owl-next {
     right: -30px;
+}
+
+.owl-dots {
+	position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.has-bg .owl-stage {
+	display: block;
+}
+
+.has-bg .testimonial-descreption {
+	min-height: 120px;
+}
+
+.has-bg .owl-nav button {
+	display: none;
+}
+
+.has-bg .owl-dots button.owl-dot {
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	opacity: 0.5;
+}
+
+.has-bg .owl-dots button.owl-dot:focus {
+	border: none;
+	outline: none;
+}
+
+.has-bg .owl-dots button.owl-dot.active {
+	opacity: 1;
 }
 
 .owl-nav .owl-prev.disabled, .owl-nav .owl-next.disabled {
@@ -581,7 +655,7 @@ footer h3 {
 
 .location-address p {
 	font-weight: 500;
-	font-family: 'Roboto';
+	font-family: 'Conv_BlissPro-Bold - Bliss Pro - Bold';
 }
 
 .admissions-blocks {
@@ -645,8 +719,9 @@ footer h3 {
 }
 
 .partners-img-txt .partner-heading {
-	font-size: 32px;
+	font-size: 36px;
 	flex: 2;
+	text-transform: uppercase;
 }
 
 .partner-description {
@@ -982,7 +1057,7 @@ textarea {
 	}
 
 	.partners-img-txt .partner-heading {
-		font-size: 28px;
+		font-size: 30px;
 	}
 
 	.hide-lg {
@@ -1070,10 +1145,15 @@ textarea {
 	.partners-img-txt .partner-heading {
 		margin-top: 30px;
 		margin-left: 0;
+		font-size: 32px;
 	}
 
 	.mg-btm-sm-30 {
 		margin-bottom: 30px;
+	}
+
+	.has-bg .testimonial-descreption {
+		min-height: 135px;
 	}
 }
 
@@ -1134,5 +1214,15 @@ textarea {
 	.location-address h3,
 	.location-address p {
 		margin-bottom: 10px;
+	}
+
+	.has-bg .testimonial-descreption {
+		min-height: 150px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.has-bg .testimonial-descreption {
+		min-height: 200px;
 	}
 }
