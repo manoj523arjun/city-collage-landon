@@ -3,25 +3,6 @@
 	padding: 0;
 }
 
-.navbar-brand::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-image: url('../images/logo-hover.png');
-	background-size: cover;
-	opacity: 0;
-}
-
-.navbar-brand:hover img {
-	opacity: 0;
-}
-
-.navbar-brand:hover::before {
-	opacity: 1;
-}
-
 #menuBannerSection {
 	position: relative;
     width: 100%;
@@ -531,7 +512,8 @@ footer h3 {
 }
 
 .has-bg .testimonial-descreption {
-	min-height: 120px;
+	font-size: 24px;
+	line-height: 1.4em;
 }
 
 .has-bg .owl-nav button {
@@ -1151,10 +1133,6 @@ textarea {
 	.mg-btm-sm-30 {
 		margin-bottom: 30px;
 	}
-
-	.has-bg .testimonial-descreption {
-		min-height: 135px;
-	}
 }
 
 @media screen and (max-width: 575px) {
@@ -1214,15 +1192,5 @@ textarea {
 	.location-address h3,
 	.location-address p {
 		margin-bottom: 10px;
-	}
-
-	.has-bg .testimonial-descreption {
-		min-height: 150px;
-	}
-}
-
-@media screen and (max-width: 420px) {
-	.has-bg .testimonial-descreption {
-		min-height: 200px;
 	}
 }
