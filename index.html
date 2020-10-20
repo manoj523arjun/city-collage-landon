@@ -375,6 +375,15 @@
 		        }
 		    }
 		});
+
+		const testimonialList = $(".testimonial-descreption");
+		let maxHeight = 0;
+		testimonialList.each(function (index, item) {
+			if ($(item).height() > maxHeight) {
+				maxHeight = $(item).height();
+			}
+		});
+		$(testimonialList).attr("style", "height:" + maxHeight + "px");
 	});
 </script>
 </body>
