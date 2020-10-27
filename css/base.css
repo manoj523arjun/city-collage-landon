@@ -91,8 +91,24 @@
 	border: none;
 }
 
-.btn-primary:hover {
+.btn-black-tr {
+	background-color: rgba(34, 34, 46, 0.9);
+	color: #ffffff;
+}
+
+.border-white {
+	border: 1px solid #ffffff;
+}
+
+.btn-lg-h {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.btn-primary:hover,
+.btn-black-tr:hover {
 	background-color: #015f63;
+	color: #ffffff;
 }
 
 .btn-rounded {
@@ -300,6 +316,10 @@ a:hover {
 	height: 75vh !important;
 }
 
+.full-width {
+	width: 100%;
+}
+
 .no-margin-btm {
 	margin-bottom: 0;
 }
@@ -318,6 +338,11 @@ ul.default-list li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.flexbox-v-center {
+	display: flex;
+	align-items: center;
 }
 
 .flex-full-height {
