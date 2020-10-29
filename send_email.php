@@ -9,7 +9,7 @@
    $comments = $_REQUEST["comments"];
 
    print($fName);
-   $to = "bellamkondamanojb@gmail.com";
+   $to = "mirageadlab@gmail.com";
    $subject = "Contact details of $fName";
    
    $message = "<table>";
@@ -27,7 +27,7 @@
 
    $message .= "</table>";
    
-   $header = "From:manoj523arjun@gmail.com \r\n";
+   $header = "From:mirageadlab@gmail.com \r\n";
    // $header .= "Cc:afgh@somedomain.com \r\n";
    $header .= "MIME-Version: 1.0\r\n";
    $header .= "Content-type: text/html\r\n";
