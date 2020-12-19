@@ -4,7 +4,7 @@
    $lName = $_REQUEST["lastName"];
    $email = $_REQUEST["email"];
    $programme = $_REQUEST["programme"];
-   $programme = $_REQUEST["phoneNumber"];
+   $phoneNumber = $_REQUEST["phoneNumber"];
    $country = $_REQUEST["countryInput"];
    $comments = $_REQUEST["comments"];
 
@@ -20,7 +20,7 @@
    $message .= "<tr><td>Email</td><td>:</td><td>$email</td></tr>";
    $message .= "<tr><td>Programme</td><td>:</td><td>$programme</td></tr>";
 
-   $message .= "<tr><td>Phone Number</td><td>:</td><td>$programme</td></tr>";
+   $message .= "<tr><td>Phone Number</td><td>:</td><td>$phoneNumber</td></tr>";
    $message .= "<tr><td>Country</td><td>:</td><td>$country</td></tr>";
 
    $message .= "<tr><td>Comments</td><td>:</td><td>$comments</td></tr>";
