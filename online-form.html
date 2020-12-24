@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Form | City College London</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<section id="menuBannerSection" class="header-fullwidth">
+	<header class="menu-container">
+		<nav class="navbar navbar-expand-sm">
+			<div class="container menu-block">
+		  		<a class="navbar-brand" href="./">
+		  			<img src="images/logo.png" height="55" />
+		  		</a>
+		  		<div class="nav-bg-overlay">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="nav navbar-nav mr-auto navbar-right">
+						  <li class="nav-item">
+						    <a class="nav-link" href="./about-us.html"><i class="caret-triangle"></i> ABOUT US</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="./programmes.html"><i class="caret-triangle"></i> PROGRAMS</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="./admissions.html"><i class="caret-triangle"></i> ADMISSIONS</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="./partners.html"><i class="caret-triangle"></i> PARTNERS</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="./contact-us.html"><i class="caret-triangle"></i> CONTACT US</a>
+						  </li>
+						</ul>
+					</div>
+					<div class="form-inline my-2 my-lg-0 nav-right-sm-devices">
+						<ul class="nav navbar-nav mr-auto" id="navRight">
+						  <li>
+						  	<a href="#">
+						  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+						  	</a>
+						    <a class="btn-primary login-btn txt-color-white" href="./ccl-portal.html">CCL PORTAL</a>
+						    <a class="search-btn txt-color-white" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+						  </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+</section>
+
+<div class="pd-t-100 parallax full-height flexbox-align-center" data-image-src="./images/online-form.jpg">
+	<div class="container text-center">
+			<h2 class="txt-color-white section-heading h1 mg-btm-30 no-border">
+				Online Application Form
+			</h2>
+	</div>
+</div>
+
+<div class="section-container">
+	<div class="container">
+		<p class="txt-color-black mg-btm-30">You must submit the following documents as part of your application. You are responsible for making sure that all required documents, including references, are submitted in time for your chosen deadline and meet the requirements. Check the documents you submit carefully. You will not be able to upload revised versions once your application is ready for assessment.</p>
+		<p class="txt-color-black mg-btm-30">Please have the following documents ready:<br />
+		Proof of ID<br />
+		Previous qualifications, Transcripts and Certificates.<br />
+		Two references<br />
+		A personal statement/SOP<br />
+		CV<br />
+		Work Experience</p>
+	</div>
+
+	<div class="container online-form">
+		<form class="form-default form-inline-labels" method="POST" enctype="multipart/form-data" id="onlineForm">
+			<div class="row">
+				<div class="col-12 mg-btm-10">
+					<h4>Field marked with an asterisk (*) are mandatory.</h4>
+				</div>
+				<div class="col-sm-12 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<select class="form-control" name="courses" required>
+								<option value></option>
+								<optgroup class="select-optiongroup txt-color-primary" label="Diploma Courses">
+							      <option value="DC_1">QUALIFI Level 2 Diploma in Care</option>
+							      <option value="DC_2">QUALIFI Level 3 Diploma in Health and Social Care</option>
+							      <option value="DC_3">QUALIFI Level 4 Diploma in Health and Social Care</option>
+							      <option value="DC_4">QUALIFI Level 5 Diploma in Health and Social Care</option>
+							      <option value="DC_5">QUALIFI Level 3 Diploma in Introduction to Management</option>
+							      <option value="DC_6">QUALIFI Level 3 Diploma in Business Management</option>
+							      <option value="DC_7">QUQUALIFI Level 3 Integrated Diploma in Business and Management</option>
+							      <option value="DC_8">QUALIFI Level 4 Diploma in Business Management</option>
+							      <option value="DC_9">QUALIFI Level 5 Diploma in Business Management</option>
+							      <option value="DC_10">QUALIFI Level 5 Diploma in Business Enterprise</option>
+							      <option value="DC_11">QUALIFI Level 7 Diploma in Executive Management</option>
+							      <option value="DC_12">QUALIFI Level 7 Diploma in Strategic Management and Leadership</option>
+							      <option value="DC_13">QUALIFI Level 3 Diploma in Business Innovation and Entrepreneurship</option>
+							      <option value="DC_14">QUALIFI Level 4 Diploma in Entrepreneurship</option>
+							      <option value="DC_15">QUALIFI Level 7 Diploma in Strategic Management and Innovation</option>
+							      <option value="DC_16">QUALIFI Level 7 Diploma in Human Resource Management</option>
+							      <option value="DC_17">QUALIFI Level 6 Diploma in Business Administration</option>
+							      <option value="DC_18">QUALIFI Level 7 Diploma in Business Strategy</option>
+							      <option value="DC_19">QUALIFI Level 3 Diploma in Hospitality and Tourism Management</option>
+							      <option value="DC_20">QUALIFI Level 4 Diploma in Hospitality and Tourism Management</option>
+							      <option value="DC_21">QUALIFI Level 5 Diploma in Hospitality and Tourism Management</option>
+							      <option value="DC_22">QUALIFI Level 7 Diploma in Hospitality and Tourism Management</option>
+							      <option value="DC_23">QUALIFI Level 7 Diploma in Accounting and Finance</option>
+							      <option value="DC_24">QUALIFI Level 7 Diploma in International Business Law</option>
+							      <option value="DC_25">QUALIFI Level 2 Award in Food Hygiene, Safety and Professional Workplace Effectiveness</option>
+
+							    </optgroup>
+							    <optgroup class="select-optiongroup txt-color-primary" label="BA (Hons) degree - final year (top-up)">
+							      <option value="BA_1">BA (Hons) in Business Management (Top-up)</option>
+							    </optgroup>
+							    <optgroup class="select-optiongroup txt-color-primary" label="Master's degree - final stage (top-up)">
+							      <option value="MD_1">Master of Business Administration (Top-up)</option>
+							    </optgroup>
+							</select>
+							<label class="form-label" data-label="Course">Select Course <sup>*</sup></label>
+						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<select class="form-control" name="intake" required>
+								<option value></option>
+								<option value="January">January</option>
+								<option value="February">February</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="September">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
+							</select>
+							<label class="form-label" data-label="Intake">Intake <sup>*</sup></label>
+						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<select class="form-control" name="modeOfStudy" required>
+								<option value></option>
+								<option value="Online">Online</option>
+								<option value="Blended">Blended</option>
+								<option value="In class">In class</option>
+							</select>
+							<label class="form-label" data-label="Mode of Study">Mode of Study <sup>*</sup></label>
+						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="title" />
+						<label class="form-label" data-label="Title">Title</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="firstName" required />
+						<label class="form-label" data-label="First name">First name <sup>*</sup></label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="surName" />
+						<label class="form-label" data-label="Surname">Surname</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<input type="text" class="form-control" id="dateOfBirth" name="dob" required />
+						  	<label class="form-label" data-label="Date of birth">DOB <sup>*</sup></label>
+						  	<span class="input-icon"><img src="./images/calendar.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="email" class="form-control" name="email" required />
+						<label class="form-label" data-label="Email">Email <sup>*</sup></label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="number" maxlength="15" class="form-control" name="mobile" required />
+						<label class="form-label" data-label="Mobile">Mobile <sup>*</sup></label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="number" maxlength="15" class="form-control" name="landline" />
+						<label class="form-label" data-label="Landline">Landline</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<select class="form-control" name="gender">
+								<option value></option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+							<label class="form-label" data-label="Gender">Gender</label>
+						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="cityCountry" />
+						<label class="form-label" data-label="City & Country of birth">Ciity & Country of Birth</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<select required class="form-control" name="nationality">
+							  <option value></option>
+							  <option value="afghan">Afghan</option>
+							  <option value="albanian">Albanian</option>
+							  <option value="algerian">Algerian</option>
+							  <option value="american">American</option>
+							  <option value="andorran">Andorran</option>
+							  <option value="angolan">Angolan</option>
+							  <option value="antiguans">Antiguans</option>
+							  <option value="argentinean">Argentinean</option>
+							  <option value="armenian">Armenian</option>
+							  <option value="australian">Australian</option>
+							  <option value="austrian">Austrian</option>
+							  <option value="azerbaijani">Azerbaijani</option>
+							  <option value="bahamian">Bahamian</option>
+							  <option value="bahraini">Bahraini</option>
+							  <option value="bangladeshi">Bangladeshi</option>
+							  <option value="barbadian">Barbadian</option>
+							  <option value="barbudans">Barbudans</option>
+							  <option value="batswana">Batswana</option>
+							  <option value="belarusian">Belarusian</option>
+							  <option value="belgian">Belgian</option>
+							  <option value="belizean">Belizean</option>
+							  <option value="beninese">Beninese</option>
+							  <option value="bhutanese">Bhutanese</option>
+							  <option value="bolivian">Bolivian</option>
+							  <option value="bosnian">Bosnian</option>
+							  <option value="brazilian">Brazilian</option>
+							  <option value="british">British</option>
+							  <option value="bruneian">Bruneian</option>
+							  <option value="bulgarian">Bulgarian</option>
+							  <option value="burkinabe">Burkinabe</option>
+							  <option value="burmese">Burmese</option>
+							  <option value="burundian">Burundian</option>
+							  <option value="cambodian">Cambodian</option>
+							  <option value="cameroonian">Cameroonian</option>
+							  <option value="canadian">Canadian</option>
+							  <option value="cape verdean">Cape Verdean</option>
+							  <option value="central african">Central African</option>
+							  <option value="chadian">Chadian</option>
+							  <option value="chilean">Chilean</option>
+							  <option value="chinese">Chinese</option>
+							  <option value="colombian">Colombian</option>
+							  <option value="comoran">Comoran</option>
+							  <option value="congolese">Congolese</option>
+							  <option value="costa rican">Costa Rican</option>
+							  <option value="croatian">Croatian</option>
+							  <option value="cuban">Cuban</option>
+							  <option value="cypriot">Cypriot</option>
+							  <option value="czech">Czech</option>
+							  <option value="danish">Danish</option>
+							  <option value="djibouti">Djibouti</option>
+							  <option value="dominican">Dominican</option>
+							  <option value="dutch">Dutch</option>
+							  <option value="east timorese">East Timorese</option>
+							  <option value="ecuadorean">Ecuadorean</option>
+							  <option value="egyptian">Egyptian</option>
+							  <option value="emirian">Emirian</option>
+							  <option value="equatorial guinean">Equatorial Guinean</option>
+							  <option value="eritrean">Eritrean</option>
+							  <option value="estonian">Estonian</option>
+							  <option value="ethiopian">Ethiopian</option>
+							  <option value="fijian">Fijian</option>
+							  <option value="filipino">Filipino</option>
+							  <option value="finnish">Finnish</option>
+							  <option value="french">French</option>
+							  <option value="gabonese">Gabonese</option>
+							  <option value="gambian">Gambian</option>
+							  <option value="georgian">Georgian</option>
+							  <option value="german">German</option>
+							  <option value="ghanaian">Ghanaian</option>
+							  <option value="greek">Greek</option>
+							  <option value="grenadian">Grenadian</option>
+							  <option value="guatemalan">Guatemalan</option>
+							  <option value="guinea-bissauan">Guinea-Bissauan</option>
+							  <option value="guinean">Guinean</option>
+							  <option value="guyanese">Guyanese</option>
+							  <option value="haitian">Haitian</option>
+							  <option value="herzegovinian">Herzegovinian</option>
+							  <option value="honduran">Honduran</option>
+							  <option value="hungarian">Hungarian</option>
+							  <option value="icelander">Icelander</option>
+							  <option value="indian">Indian</option>
+							  <option value="indonesian">Indonesian</option>
+							  <option value="iranian">Iranian</option>
+							  <option value="iraqi">Iraqi</option>
+							  <option value="irish">Irish</option>
+							  <option value="israeli">Israeli</option>
+							  <option value="italian">Italian</option>
+							  <option value="ivorian">Ivorian</option>
+							  <option value="jamaican">Jamaican</option>
+							  <option value="japanese">Japanese</option>
+							  <option value="jordanian">Jordanian</option>
+							  <option value="kazakhstani">Kazakhstani</option>
+							  <option value="kenyan">Kenyan</option>
+							  <option value="kittian and nevisian">Kittian and Nevisian</option>
+							  <option value="kuwaiti">Kuwaiti</option>
+							  <option value="kyrgyz">Kyrgyz</option>
+							  <option value="laotian">Laotian</option>
+							  <option value="latvian">Latvian</option>
+							  <option value="lebanese">Lebanese</option>
+							  <option value="liberian">Liberian</option>
+							  <option value="libyan">Libyan</option>
+							  <option value="liechtensteiner">Liechtensteiner</option>
+							  <option value="lithuanian">Lithuanian</option>
+							  <option value="luxembourger">Luxembourger</option>
+							  <option value="macedonian">Macedonian</option>
+							  <option value="malagasy">Malagasy</option>
+							  <option value="malawian">Malawian</option>
+							  <option value="malaysian">Malaysian</option>
+							  <option value="maldivan">Maldivan</option>
+							  <option value="malian">Malian</option>
+							  <option value="maltese">Maltese</option>
+							  <option value="marshallese">Marshallese</option>
+							  <option value="mauritanian">Mauritanian</option>
+							  <option value="mauritian">Mauritian</option>
+							  <option value="mexican">Mexican</option>
+							  <option value="micronesian">Micronesian</option>
+							  <option value="moldovan">Moldovan</option>
+							  <option value="monacan">Monacan</option>
+							  <option value="mongolian">Mongolian</option>
+							  <option value="moroccan">Moroccan</option>
+							  <option value="mosotho">Mosotho</option>
+							  <option value="motswana">Motswana</option>
+							  <option value="mozambican">Mozambican</option>
+							  <option value="namibian">Namibian</option>
+							  <option value="nauruan">Nauruan</option>
+							  <option value="nepalese">Nepalese</option>
+							  <option value="new zealander">New Zealander</option>
+							  <option value="ni-vanuatu">Ni-Vanuatu</option>
+							  <option value="nicaraguan">Nicaraguan</option>
+							  <option value="nigerien">Nigerien</option>
+							  <option value="north korean">North Korean</option>
+							  <option value="northern irish">Northern Irish</option>
+							  <option value="norwegian">Norwegian</option>
+							  <option value="omani">Omani</option>
+							  <option value="pakistani">Pakistani</option>
+							  <option value="palauan">Palauan</option>
+							  <option value="panamanian">Panamanian</option>
+							  <option value="papua new guinean">Papua New Guinean</option>
+							  <option value="paraguayan">Paraguayan</option>
+							  <option value="peruvian">Peruvian</option>
+							  <option value="polish">Polish</option>
+							  <option value="portuguese">Portuguese</option>
+							  <option value="qatari">Qatari</option>
+							  <option value="romanian">Romanian</option>
+							  <option value="russian">Russian</option>
+							  <option value="rwandan">Rwandan</option>
+							  <option value="saint lucian">Saint Lucian</option>
+							  <option value="salvadoran">Salvadoran</option>
+							  <option value="samoan">Samoan</option>
+							  <option value="san marinese">San Marinese</option>
+							  <option value="sao tomean">Sao Tomean</option>
+							  <option value="saudi">Saudi</option>
+							  <option value="scottish">Scottish</option>
+							  <option value="senegalese">Senegalese</option>
+							  <option value="serbian">Serbian</option>
+							  <option value="seychellois">Seychellois</option>
+							  <option value="sierra leonean">Sierra Leonean</option>
+							  <option value="singaporean">Singaporean</option>
+							  <option value="slovakian">Slovakian</option>
+							  <option value="slovenian">Slovenian</option>
+							  <option value="solomon islander">Solomon Islander</option>
+							  <option value="somali">Somali</option>
+							  <option value="south african">South African</option>
+							  <option value="south korean">South Korean</option>
+							  <option value="spanish">Spanish</option>
+							  <option value="sri lankan">Sri Lankan</option>
+							  <option value="sudanese">Sudanese</option>
+							  <option value="surinamer">Surinamer</option>
+							  <option value="swazi">Swazi</option>
+							  <option value="swedish">Swedish</option>
+							  <option value="swiss">Swiss</option>
+							  <option value="syrian">Syrian</option>
+							  <option value="taiwanese">Taiwanese</option>
+							  <option value="tajik">Tajik</option>
+							  <option value="tanzanian">Tanzanian</option>
+							  <option value="thai">Thai</option>
+							  <option value="togolese">Togolese</option>
+							  <option value="tongan">Tongan</option>
+							  <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+							  <option value="tunisian">Tunisian</option>
+							  <option value="turkish">Turkish</option>
+							  <option value="tuvaluan">Tuvaluan</option>
+							  <option value="ugandan">Ugandan</option>
+							  <option value="ukrainian">Ukrainian</option>
+							  <option value="uruguayan">Uruguayan</option>
+							  <option value="uzbekistani">Uzbekistani</option>
+							  <option value="venezuelan">Venezuelan</option>
+							  <option value="vietnamese">Vietnamese</option>
+							  <option value="welsh">Welsh</option>
+							  <option value="yemenite">Yemenite</option>
+							  <option value="zambian">Zambian</option>
+							  <option value="zimbabwean">Zimbabwean</option>
+							</select>
+							<label class="form-label" data-label="Nationality">Nationality <sup>*</sup></label>
+						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mg-btm-10">
+					<h4>Address</h4>
+				</div>
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="houseNo" />
+						<label class="form-label" data-label="House no">House no</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="streetName" />
+						<label class="form-label" data-label="Street name">Street Name</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="city" />
+						<label class="form-label" data-label="City">City</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="number" maxlength="10" class="form-control" name="postCode" />
+						<label class="form-label" data-label="Postcode/Zipcode">Postcode/Zipcode</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+							<select class="form-control" id="country" name="country">
+								<option value></option>
+							</select>
+							<label class="form-label" data-label="Country">Country</label>
+							<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mg-btm-10">
+					<h4>Acedemic History <span class="txt-display-inline">Qualification details 1</span></h4>
+				</div>
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="one-qualificationName" required />
+						<label class="form-label" data-label="Qualification name/title 1">Qualification name/title <sup>*</sup></label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="one-dateAwarded" required />
+						<label class="form-label" data-label="Date awarded 1">Date awarded as printed on your certificate <sup>*</sup></label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="one-awardingInstitute" required />
+						<label class="form-label" data-label="Awarding institution 1">Awarding institution <sup>*</sup></label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="one-uploadDoc" />
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mg-btm-10">
+					<h4>Acedemic History <span class="txt-display-inline">Qualification details 2</span></h4>
+				</div>
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="two-qualificationName" />
+						<label class="form-label" data-label="Qualification name/title 2">Qualification name/title</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="two-dateAwarded" />
+						<label class="form-label" data-label="Date awarded 2">Date awarded as printed on your certificate</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<input type="text" class="form-control" name="two-awardingInstitute" />
+						<label class="form-label" data-label="Awarding institution 2">Awarding institution</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="two-uploadDoc" />
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mg-btm-10">
+					<h4>Supporting Documents</h4>
+				</div>
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="passport" />
+							<span class="file-label-text">Passport/ID<sup>*</sup></span>
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="personalStatement" />
+							<span class="file-label-text">Personal Statement/SOP<sup>*</sup></span>
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="resume" />
+							<span class="file-label-text">Resume (CV)<sup>*</sup></span>
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="workExp" />
+							<span class="file-label-text">Work Experience</span>
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="references" />
+							<span class="file-label-text">References</span>
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-sm-6 mg-btm-20">
+					<div class="form-group">
+						<label class="input-file-box">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="addQualification" />
+							<span class="file-label-text">Additional Qualification</span>
+							<span class="upload-button">Upload doc</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mg-btm-10">
+					<h4>How did you hear about us?</h4>
+				</div>
+
+				<div class="col-sm-12 mg-btm-20">
+					<div class="form-group">
+						<div class="input-icon-box">
+						  	<select class="form-control" name="gender">
+								<option value></option>
+								<option value="Referred by a Friend">Referred by a Friend</option>
+								<option value="Referred by a Consultant">Referred by a Consultant</option>
+								<option value="School, College or University">School, College or University</option>
+								<option value="Online Advertisement">Online Advertisement</option>
+								<option value="Internet Search">Internet Search</option>
+							</select>
+							<label class="form-label" data-label="How did you hear about us">How did you hear about us?</label>
+						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mg-btm-30">
+					<div class="form-group form-check">
+						<input id="agreement" type="checkbox" class="form-check-input" name="agreement">
+					    <label for="agreement" class="form-check-label"> I hereby declare that all the information given by me in this application is true and correct to the best of my knowledge and belief. I also note that if any of the above statements are found to be incorrect or false or any information or particulars have been suppressed or omitted there from, I am liable to be disqualified and my admission may be cancelled. I have read and understood the contents of the Admission Announcement for the various Programmes. I hereby permit the institute to use, display or transfer any of the details furnished by me in this form for complying with the admission formalities.</label>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button id="submitFormBtn" class="btn-black btn-rounded apply-now">SUBMIT</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<footer class="section-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-3 col-6 quick-links-block">
+				<div class="">
+					<h3>Quick Links</h3>
+					<ul class="quick-links">
+						<li>
+							<a href="./about-us.html">About Us</a>
+						</li>
+						<li>
+							<a href="./partners.html">Partners</a>
+						</li>
+						<li>
+							<a href="./study-online.html">Study Online</a>
+						</li>
+						<li>
+							<a href="#">Apply Now</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-6 quick-links-block">
+				<div class="">
+					<h3>Campuses</h3>
+					<ul class="quick-links">
+						<li>
+							<a href="./contact-us.html">London</a>
+						</li>
+						<li>
+							<a href="./contact-us.html">Dubai</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-6 quick-links-block">
+				<div class="">
+					<h3>Programmes</h3>
+					<ul class="quick-links">
+						<li>
+							<a href="./programmes.html">Diploma Courses</a>
+						</li>
+						<li>
+							<a href="./programmes/mba-top-up.html">MBA Top Up</a>
+						</li>
+						<li>
+							<a href="./programmes/ba-in-business-management.html">BA (Hons) Top Up</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6 quick-links-block">
+				<h3>Contact Us</h3>
+				<div class="address">
+				Vista Office Centre <br />
+	50 Salisbury Road<br />
+	Hounslow, Middlesex<br />
+	TW4 6JQ <br />
+	Tel: 0208 058 3878 <br />
+	Email: info@citycollegelondon.co.uk <br />
+				</div>
+			</div>
+			<div class="col-lg-3 offset-lg-0 col-sm-6 offset-sm-3 col-6 offset-3">
+				<img src="images/footer-logo.png" width="100%" style="margin-top: 50px;">
+			</div>
+		</div>
+	</div>
+
+	<div id="back-to-top" class="back-to-top-btn">
+	  <button>
+		    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45" height="45" viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;" xml:space="preserve">
+				<path class="st0" d="M19.8,244.8c0-124.1,100.9-225,225-225c124.1,0,225,100.9,225,225s-100.9,225-225,225
+					C120.7,469.8,19.8,368.9,19.8,244.8z"/>
+				<path class="st1" d="M349.3,292.2c2.4-2.4,3.7-5.8,3.7-9c0-3.2-1.3-6.6-3.7-9l-95.5-95.5c-2.4-2.4-5.7-3.7-9-3.7s-6.6,1.3-9,3.7
+					l-95.5,95.5c-5,5-5,13,0,18c5,5,13,5,18,0l86.5-86.5l86.5,86.5C336.3,297.1,344.4,297.1,349.3,292.2z"/>
+			</svg>
+	  </button>
+	</div>
+</footer>
+
+<div class="copyright-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-sm-12">
+					&copy; 2020 citycollegelondon. All rights reserved. All design, text and Images on this website are subject to copyright. Use of this site indicates your agreement to our terms of usage and privacy policy.
+				</div>
+				<div class="col-md-5 col-sm-12">
+					<div class="social-media-block">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-instagram"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/countriesList.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$( "#dateOfBirth" ).datepicker();
+		renderCountriesList();
+		$(".form-default select").each(function() {
+			$(this).addClass("initial-select");
+		});
+
+		$(".form-control").not("[type='file']").on('blur', function () {
+			const value = $(this).val();
+			if (value) {
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+		});
+
+		$(".form-default select").change(function() {
+			if (!$(this).val() && $(this).attr("class").indexOf("initial-select") === -1) {
+				$(this).addClass("initial-select");
+			} else if ($(this).val() && $(this).attr("class").indexOf("initial-select") !== -1) {
+				$(this).removeClass("initial-select");
+			}
+		});
+
+		$(".form-default [type='file']").change(function() {
+			const findLableText = $(this).parent(".input-file-box").find('.file-label-text');
+			if ($(this).val()) {
+				$(this).removeClass("txt-visibility-hidden");
+				if (findLableText.length > 0) $(findLableText[0]).addClass("txt-visibility-hidden");
+			} else {
+				$(this).addClass("txt-visibility-hidden");
+				if (findLableText.length > 0) $(findLableText[0]).removeClass("txt-visibility-hidden");
+			}
+		});
+
+		var validateForm = $("#onlineForm").validate();
+
+		$("#onlineForm").on('submit', function (event) {
+			if ($(this).valid()) {
+				event.preventDefault();
+				var labels = {};
+				var formData = $(this).serializeArray();
+				formData[0].value = courseList[formData[0].value];
+				var name = $("[name='firstName']").val();
+				var passport = $("[name='passport']").prop("files")[0]
+				formData.forEach(function(inputItem) {
+					var label = $('[name='+inputItem.name+']').parent().find(".form-label").attr("data-label");
+				inputItem.label = label.replace("*", "");
+				labels[inputItem.name] = inputItem.label;
+				});
+				console.log(labels);
+				var finalFormData = new FormData(this);
+				finalFormData.append("labels", JSON.stringify(labels));
+				finalFormData.append("courseName", formData[0].value);
+				$.ajax({
+					method:'POST',
+					url:'upload.php',
+					contentType:false,
+          			processData:false,
+					data: finalFormData,
+				    contentType: false,
+				    cache: false,
+				    processData:false,
+					beforeSend:function(){
+						console.log("loading.....");
+					},
+					success:function(data){
+						var response = jQuery.parseJSON(data);
+						if (response.type === "success") {
+							alert("Online form submitted successfully");
+							validateForm.resetForm();
+						} else {
+							alert("Form not submitted successfully. Please try again");
+						}
+					}
+				});
+			}
+		});
+	});
+
+	function renderCountriesList() {
+		const countryBox = $("#country");
+		let innerHTMLWithExt = '';
+		let innerHTML = '';
+		countriesList.forEach((countryValue) => {
+			innerHTML += `<option value=${countryValue.name}>${countryValue.name}</option>`;
+		});
+		countryBox.append(innerHTML);
+	}
+</script>
+
+</body>
+</html>

@@ -926,6 +926,65 @@ textarea {
 	fill:#FFFFFF;
 }
 
+.initial-select {
+	color: #c2c2c2;
+}
+
+.input-icon-box {
+	position: relative;
+}
+
+.input-icon-box .form-control {
+	background: transparent;
+	cursor: pointer;
+}
+
+.input-icon-box .input-icon {
+	position: absolute;
+	right: 15px;
+	top: 14px;
+	z-index: -1;
+}
+
+.online-form h4 {
+	font-family: 'Conv_BlissPro-Bold - Bliss Pro - Bold';
+}
+
+.online-form h4 span.txt-display-inline {
+	font-family: 'Conv_BlissPro - Bliss Pro - Regular';
+	font-size: 90%;
+	margin-left: 100px;
+}
+
+.input-file-box,
+.input-file-box .input-box {
+	position: relative;
+	background-color: #a3a3a3;
+	border: none;
+	line-height: 1.8em;
+	border-radius: 10px;
+	width: 100%;
+	color: #000000;
+}
+
+.input-file-box .upload-button {
+	position: absolute;
+	cursor: pointer;
+	background: #000000;
+	padding: 6px 12px;
+	color: #a3a3a3;
+	top: 6px;
+    left: 7px;
+    border-radius: 10px;
+}
+
+.file-label-text {
+	position: absolute;
+    top: 12px;
+    left: 140px;
+    color: #000000;
+    font-size: 20px;
+}
 
 @media screen and (min-width: 1200px) {
 	.navbar-brand {
