@@ -654,7 +654,7 @@
 			<div class="row">
 				<div class="col-12 mg-btm-30">
 					<div class="form-group form-check">
-						<input id="agreement" type="checkbox" class="form-check-input" name="agreement">
+						<input id="agreement" type="checkbox" class="form-check-input" name="agreement" required>
 					    <label for="agreement" class="form-check-label"> I hereby declare that all the information given by me in this application is true and correct to the best of my knowledge and belief. I also note that if any of the above statements are found to be incorrect or false or any information or particulars have been suppressed or omitted there from, I am liable to be disqualified and my admission may be cancelled. I have read and understood the contents of the Admission Announcement for the various Programmes. I hereby permit the institute to use, display or transfer any of the details furnished by me in this form for complying with the admission formalities.</label>
 					</div>
 				</div>
@@ -684,7 +684,7 @@
 							<a href="./study-online.html">Study Online</a>
 						</li>
 						<li>
-							<a href="#">Apply Now</a>
+							<a href="./online-form.html">Apply Now</a>
 						</li>
 					</ul>
 				</div>
@@ -773,18 +773,32 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$( "#dateOfBirth" ).datepicker();
 		renderCountriesList();
 		$(".form-default select").each(function() {
 			$(this).addClass("initial-select");
 		});
 
-		$(".form-control").not("[type='file']").on('blur', function () {
+		$(".form-control").not("[type='file'], #dateOfBirth").on('blur', function () {
 			const value = $(this).val();
 			if (value) {
 				$(this).addClass("active");
 			} else {
 				$(this).removeClass("active");
+			}
+		});
+
+		$( "#dateOfBirth" ).datepicker({
+	        changeMonth: true,
+	        changeYear: true,
+	        minDate: '-40Y',
+	        maxDate: '+1Y',
+			onClose: function(selectedData) {
+				var value = $("#dateOfBirth").val();
+				if (value) {
+					$(this).addClass("active");
+				} else {
+					$(this).removeClass("active");
+				}
 			}
 		});
 
@@ -816,13 +830,10 @@
 				var formData = $(this).serializeArray();
 				formData[0].value = courseList[formData[0].value];
 				var name = $("[name='firstName']").val();
-				var passport = $("[name='passport']").prop("files")[0]
 				formData.forEach(function(inputItem) {
 					var label = $('[name='+inputItem.name+']').parent().find(".form-label").attr("data-label");
-				inputItem.label = label.replace("*", "");
-				labels[inputItem.name] = inputItem.label;
+				labels[inputItem.name] = label;
 				});
-				console.log(labels);
 				var finalFormData = new FormData(this);
 				finalFormData.append("labels", JSON.stringify(labels));
 				finalFormData.append("courseName", formData[0].value);
@@ -842,9 +853,10 @@
 						var response = jQuery.parseJSON(data);
 						if (response.type === "success") {
 							alert("Online form submitted successfully");
-							validateForm.resetForm();
+							window.location.reload(true);
 						} else {
 							alert("Form not submitted successfully. Please try again");
+							console.log(response);
 						}
 					}
 				});

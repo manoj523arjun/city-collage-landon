@@ -24,7 +24,7 @@
 
 	foreach ($_POST as $key => $value) {
 		# code...
-		if ($key !== "labels" && $key !== "courseName") {
+		if ($key !== "labels" && $key !== "courseName" && $key !== "agreement") {
 			if ($key === "courses") $value = $courseName;
 			$message .= "<tr><td>$array[$key]</td><td>:</td><td>$value</td></tr>";
 		}
