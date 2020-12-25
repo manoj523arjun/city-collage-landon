@@ -839,7 +839,7 @@
 				finalFormData.append("courseName", formData[0].value);
 				$.ajax({
 					method:'POST',
-					url:'upload.php',
+					url:'https://citycollegelondon.co.uk/upload.php',
 					contentType:false,
           			processData:false,
 					data: finalFormData,
@@ -848,6 +848,8 @@
 				    processData:false,
 					beforeSend:function(){
 						console.log("loading.....");
+						$("#submitFormBtn").attr("disabled", "disabled");
+
 					},
 					success:function(data){
 						var response = jQuery.parseJSON(data);
@@ -858,6 +860,11 @@
 							alert("Form not submitted successfully. Please try again");
 							console.log(response);
 						}
+						$("#submitFormBtn").removeAttr("disabled");
+					},
+					error:function() {
+						console.log(errordata);
+						$("#submitFormBtn").removeAttr("disabled");
 					}
 				});
 			}
