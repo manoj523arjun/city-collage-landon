@@ -38,7 +38,7 @@
 	sizes="180x180">
 	<link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-icon-57x57.png" 
 	sizes="180x180">
-	
+
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 </head>
@@ -553,6 +553,7 @@
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
 						<label class="input-file-box" tabindex="0">
+							<span class="info">Please upload all docs in one zip file.</span>
 							<input tabindex="-1" type="file" class="form-control input-box txt-visibility-hidden" name="one-uploadDoc" required />
 							<span class="upload-button">Upload doc</span>
 						</label>
@@ -566,29 +567,30 @@
 				</div>
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="two-qualificationName" />
-						<label class="form-label" data-label="Qualification name/title 2">Qualification name/title</label>
+						<input type="text" class="form-control" name="two-qualificationName" required />
+						<label class="form-label" data-label="Qualification name/title 2">Qualification name/title <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="two-dateAwarded" />
-						<label class="form-label" data-label="Date awarded 2">Date awarded as printed on your certificate</label>
+						<input type="text" class="form-control" name="two-dateAwarded" required />
+						<label class="form-label" data-label="Date awarded 2">Date awarded as printed on your certificate <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="two-awardingInstitute" />
-						<label class="form-label" data-label="Awarding institution 2">Awarding institution</label>
+						<input type="text" class="form-control" name="two-awardingInstitute" required />
+						<label class="form-label" data-label="Awarding institution 2">Awarding institution <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
 						<label class="input-file-box" tabindex="0">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="two-uploadDoc" tabindex="-1" />
+							<span class="info">Please upload all docs in one zip file.</span>
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="two-uploadDoc" tabindex="-1" required />
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>

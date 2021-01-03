@@ -982,6 +982,13 @@ textarea {
 	margin-left: 10px;
 }
 
+.input-file-box span.info {
+	position: absolute;
+    top: -25px;
+    left: 10px;
+    color: #777777;
+}
+
 .file-label-text {
 	position: absolute;
     top: 12px;
@@ -1165,6 +1172,13 @@ textarea {
   	.back-to-top-btn {
 		bottom: 40px;
 	}
+	.form-inline-labels .form-label {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.file-label-text {
+		font-size: 14px;
+	}
 
 }
 
@@ -1195,6 +1209,13 @@ textarea {
 
 	.mg-btm-sm-30 {
 		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+	.file-label-text {
+		left: 120px;
+		line-height: 14px;
 	}
 }
 
@@ -1255,5 +1276,12 @@ textarea {
 	.location-address h3,
 	.location-address p {
 		margin-bottom: 10px;
+	}
+
+	.online-form h4 span.txt-display-inline {
+		display: block;
+		margin: 0;
+		margin-top: 5px;
+		font-size: 18px;
 	}
 }
