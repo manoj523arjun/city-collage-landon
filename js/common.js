@@ -43,6 +43,7 @@ var courseList = {
 	"DC_23": "QUALIFI Level 7 Diploma in Accounting and Finance",
 	"DC_24": "QUALIFI Level 7 Diploma in International Business Law",
 	"DC_25": "QUALIFI Level 2 Award in Food Hygiene, Safety and Professional Workplace Effectiveness",
+	"DC_26": "QUALIFI Level 3 Diploma in Cyber Security Management and Operations",
 	"BA_1": "BA (Hons) in Business Management (Top-up)",
 	"MD_1": "Master of Business Administration (Top-up)"
 }

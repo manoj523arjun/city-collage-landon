@@ -978,6 +978,10 @@ textarea {
     border-radius: 10px;
 }
 
+.form-group .input-file-box label.error {
+	margin-left: 10px;
+}
+
 .file-label-text {
 	position: absolute;
     top: 12px;
@@ -1056,7 +1060,7 @@ textarea {
 	#navbarSupportedContent::after {
 		content: "";
 	    position: absolute;
-	    right: calc(30% - 50px);
+	    right: calc(28% - 50px);
 	    top: -14px;
 	    border-bottom: 15px solid #00294e;
 	    width: 15px;
@@ -1108,7 +1112,7 @@ textarea {
 
 @media screen and (max-width: 991px) {
 	#navbarSupportedContent::after {
-	    right: calc(40% - 50px);
+	    right: calc(38% - 50px);
 	}
 	.services-grid .overlay-text {
 		position: relative;
@@ -1166,7 +1170,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
 	#navbarSupportedContent::after {
-	    right: calc(53% - 50px);
+	    right: calc(50% - 50px);
 	}
 
 	.quick-links-block {
@@ -1204,7 +1208,7 @@ textarea {
 	}
 
 	#navbarSupportedContent::after {
-		right: 220px;
+		right: 205px;
 		top: -12px;
 	}
 
@@ -1231,7 +1235,7 @@ textarea {
 	.nav-right-sm-devices {
 		position: absolute;
 	    right: 0px;
-	    top: 15px;
+	    top: 6px;
 	}
 
 

@@ -58,7 +58,7 @@
 	</header>
 </section>
 
-<div class="pd-t-100 parallax full-height flexbox-align-center" data-image-src="./images/online-form.jpg">
+<div class="pd-t-100 parallax full-height-75 flexbox-align-center" data-image-src="./images/online-form.jpg">
 	<div class="container text-center">
 			<h2 class="txt-color-white section-heading h1 mg-btm-30 no-border">
 				Online Application Form
@@ -96,7 +96,7 @@
 							      <option value="DC_4">QUALIFI Level 5 Diploma in Health and Social Care</option>
 							      <option value="DC_5">QUALIFI Level 3 Diploma in Introduction to Management</option>
 							      <option value="DC_6">QUALIFI Level 3 Diploma in Business Management</option>
-							      <option value="DC_7">QUQUALIFI Level 3 Integrated Diploma in Business and Management</option>
+							      <option value="DC_7">QUALIFI Level 3 Integrated Diploma in Business and Management</option>
 							      <option value="DC_8">QUALIFI Level 4 Diploma in Business Management</option>
 							      <option value="DC_9">QUALIFI Level 5 Diploma in Business Management</option>
 							      <option value="DC_10">QUALIFI Level 5 Diploma in Business Enterprise</option>
@@ -115,6 +115,7 @@
 							      <option value="DC_23">QUALIFI Level 7 Diploma in Accounting and Finance</option>
 							      <option value="DC_24">QUALIFI Level 7 Diploma in International Business Law</option>
 							      <option value="DC_25">QUALIFI Level 2 Award in Food Hygiene, Safety and Professional Workplace Effectiveness</option>
+							      <option value="DC_26">QUALIFI Level 3 Diploma in Cyber Security Management and Operations</option>
 
 							    </optgroup>
 							    <optgroup class="select-optiongroup txt-color-primary" label="BA (Hons) degree - final year (top-up)">
@@ -172,8 +173,8 @@
 			<div class="row">
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="title" />
-						<label class="form-label" data-label="Title">Title</label>
+						<input type="text" class="form-control" name="title" required />
+						<label class="form-label" data-label="Title">Title <sup>*</sup></label>
 					</div>
 				</div>
 
@@ -186,8 +187,8 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="surName" />
-						<label class="form-label" data-label="Surname">Surname</label>
+						<input type="text" class="form-control" name="surName" required />
+						<label class="form-label" data-label="Surname">Surname <sup>*</sup></label>
 					</div>
 				</div>
 
@@ -217,20 +218,20 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="number" maxlength="15" class="form-control" name="landline" />
-						<label class="form-label" data-label="Landline">Landline</label>
+						<input type="number" maxlength="15" class="form-control" name="landline" required />
+						<label class="form-label" data-label="Landline">Landline <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
 						<div class="input-icon-box">
-						  	<select class="form-control" name="gender">
+						  	<select class="form-control" name="gender" required>
 								<option value></option>
 								<option value="Male">Male</option>
 								<option value="Female">Female</option>
 							</select>
-							<label class="form-label" data-label="Gender">Gender</label>
+							<label class="form-label" data-label="Gender">Gender <sup>*</sup></label>
 						  	<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
 						</div>
 					</div>
@@ -238,8 +239,8 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="cityCountry" />
-						<label class="form-label" data-label="City & Country of birth">Ciity & Country of Birth</label>
+						<input type="text" class="form-control" name="cityCountry" required />
+						<label class="form-label" data-label="City & Country of birth">City & Country of Birth <sup>*</sup></label>
 					</div>
 				</div>
 
@@ -454,39 +455,39 @@
 				</div>
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="houseNo" />
-						<label class="form-label" data-label="House no">House no</label>
+						<input type="text" class="form-control" name="houseNo" required />
+						<label class="form-label" data-label="House no">House no <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="streetName" />
-						<label class="form-label" data-label="Street name">Street Name</label>
+						<input type="text" class="form-control" name="streetName" required />
+						<label class="form-label" data-label="Street name">Street Name <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="text" class="form-control" name="city" />
-						<label class="form-label" data-label="City">City</label>
+						<input type="text" class="form-control" name="city" required />
+						<label class="form-label" data-label="City">City <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<input type="number" maxlength="10" class="form-control" name="postCode" />
-						<label class="form-label" data-label="Postcode/Zipcode">Postcode/Zipcode</label>
+						<input type="number" maxlength="10" class="form-control" name="postCode" required />
+						<label class="form-label" data-label="Postcode/Zipcode">Postcode/Zipcode <sup>*</sup></label>
 					</div>
 				</div>
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
 						<div class="input-icon-box">
-							<select class="form-control" id="country" name="country">
+							<select class="form-control" id="country" name="country" required>
 								<option value></option>
 							</select>
-							<label class="form-label" data-label="Country">Country</label>
+							<label class="form-label" data-label="Country">Country <sup>*</sup></label>
 							<span class="input-icon"><img src="./images/caret-down.png" width="20"></span>
 						</div>
 					</div>
@@ -520,8 +521,8 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="one-uploadDoc" />
+						<label class="input-file-box" tabindex="0">
+							<input tabindex="-1" type="file" class="form-control input-box txt-visibility-hidden" name="one-uploadDoc" required />
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -555,8 +556,8 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="two-uploadDoc" />
+						<label class="input-file-box" tabindex="0">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="two-uploadDoc" tabindex="-1" />
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -569,9 +570,9 @@
 				</div>
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="passport" />
-							<span class="file-label-text">Passport/ID<sup>*</sup></span>
+						<label class="input-file-box" tabindex="0">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="passport" tabindex="-1" required />
+							<span class="file-label-text">Passport/ID <sup>*</sup></span>
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -579,9 +580,9 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="personalStatement" />
-							<span class="file-label-text">Personal Statement/SOP<sup>*</sup></span>
+						<label class="input-file-box" tabindex="0">
+							<input type="file" tabindex="-1" class="form-control input-box txt-visibility-hidden" name="personalStatement" required tabindex="-1" />
+							<span class="file-label-text">Personal Statement/SOP <sup>*</sup></span>
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -589,9 +590,9 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="resume" />
-							<span class="file-label-text">Resume (CV)<sup>*</sup></span>
+						<label class="input-file-box" tabindex="0">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="resume" required tabindex="-1" />
+							<span class="file-label-text">Resume (CV) <sup>*</sup></span>
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -599,9 +600,9 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="workExp" />
-							<span class="file-label-text">Work Experience</span>
+						<label class="input-file-box" tabindex="0">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="workExp" required tabindex="-1" />
+							<span class="file-label-text">Work Experience <sup>*</sup></span>
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -609,9 +610,9 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="references" />
-							<span class="file-label-text">References</span>
+						<label class="input-file-box" tabindex="0">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="references" required tabindex="-1" />
+							<span class="file-label-text">References <sup>*</sup></span>
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -619,9 +620,9 @@
 
 				<div class="col-sm-6 mg-btm-20">
 					<div class="form-group">
-						<label class="input-file-box">
-							<input type="file" class="form-control input-box txt-visibility-hidden" name="addQualification" />
-							<span class="file-label-text">Additional Qualification</span>
+						<label class="input-file-box" tabindex="0">
+							<input type="file" class="form-control input-box txt-visibility-hidden" name="addQualification" required tabindex="-1" />
+							<span class="file-label-text">Additional Qualification <sup>*</sup></span>
 							<span class="upload-button">Upload doc</span>
 						</label>
 					</div>
@@ -773,6 +774,9 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
+		setTimeout(function() {
+			$("#resetFormBtn").trigger("click");
+		}, 5000);
 		renderCountriesList();
 		$(".form-default select").each(function() {
 			$(this).addClass("initial-select");
@@ -838,33 +842,33 @@
 				finalFormData.append("labels", JSON.stringify(labels));
 				finalFormData.append("courseName", formData[0].value);
 				$.ajax({
-					method:'POST',
+					method:'post',
 					url:'https://citycollegelondon.co.uk/upload.php',
-					contentType:false,
-          			processData:false,
-					data: finalFormData,
-				    contentType: false,
+					contenttype:false,
+          			processdata:false,
+					data: finalformdata,
+				    contenttype: false,
 				    cache: false,
-				    processData:false,
-					beforeSend:function(){
+				    processdata:false,
+					beforesend:function(){
 						console.log("loading.....");
-						$("#submitFormBtn").attr("disabled", "disabled");
+						$("#submitformbtn").attr("disabled", "disabled");
 
 					},
 					success:function(data){
-						var response = jQuery.parseJSON(data);
+						var response = jquery.parsejson(data);
 						if (response.type === "success") {
-							alert("Online form submitted successfully");
+							alert("online form submitted successfully");
 							window.location.reload(true);
 						} else {
-							alert("Form not submitted successfully. Please try again");
+							alert("form not submitted successfully. please try again");
 							console.log(response);
 						}
-						$("#submitFormBtn").removeAttr("disabled");
+						$("#submitformbtn").removeattr("disabled");
 					},
 					error:function(errordata) {
 						console.log(errordata);
-						$("#submitFormBtn").removeAttr("disabled");
+						$("#submitformbtn").removeattr("disabled");
 					}
 				});
 			}
