@@ -11,7 +11,7 @@
 	$errors= array();
 	$success = array();
 
-	$extensions= array("jpeg","jpg","png", "doc", "docx");
+	$extensions= array("jpeg","jpg","png", "doc", "docx", "zip", "rar");
 
 	if (!is_dir('./online-forms/'.$folderName)) {
 	    mkdir('./online-forms/'.$folderName);
